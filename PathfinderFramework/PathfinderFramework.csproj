@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{422BCB13-4731-41F8-ADA1-38FF0F83D21B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PathfinderFramework</RootNamespace>
+    <AssemblyName>PathfinderFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartment.Designer.cs">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartments.Designer.cs">
+      <DependentUpon>FormDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployees.Designer.cs">
+      <DependentUpon>FormEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosition.Designer.cs">
+      <DependentUpon>FormPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPositionProfession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPositionProfession.Designer.cs">
+      <DependentUpon>FormPositionProfession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPositions.Designer.cs">
+      <DependentUpon>FormPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfession.Designer.cs">
+      <DependentUpon>FormProfession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfessionEmployeeSkillLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfessionEmployeeSkillLevel.Designer.cs">
+      <DependentUpon>FormProfessionEmployeeSkillLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfessions.Designer.cs">
+      <DependentUpon>FormProfessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfessionSkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfessionSkill.Designer.cs">
+      <DependentUpon>FormProfessionSkill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSkillLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSkillLevel.Designer.cs">
+      <DependentUpon>FormSkillLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSkillLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSkillLevels.Designer.cs">
+      <DependentUpon>FormSkillLevels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSkills.Designer.cs">
+      <DependentUpon>FormSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDepartment.resx">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartments.resx">
+      <DependentUpon>FormDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployees.resx">
+      <DependentUpon>FormEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosition.resx">
+      <DependentUpon>FormPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPositionProfession.resx">
+      <DependentUpon>FormPositionProfession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPositions.resx">
+      <DependentUpon>FormPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfession.resx">
+      <DependentUpon>FormProfession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfessionEmployeeSkillLevel.resx">
+      <DependentUpon>FormProfessionEmployeeSkillLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfessions.resx">
+      <DependentUpon>FormProfessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSkillLevel.resx">
+      <DependentUpon>FormSkillLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSkillLevels.resx">
+      <DependentUpon>FormSkillLevels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSkills.resx">
+      <DependentUpon>FormSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
