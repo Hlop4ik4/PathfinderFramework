@@ -42,6 +42,7 @@
             this.buttonSave.TabIndex = 0;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // label1
             // 
@@ -67,6 +68,7 @@
             this.buttonCancel.TabIndex = 0;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormDepartment
             // 

@@ -89,6 +89,7 @@
             this.buttonDeleteProfession.TabIndex = 1;
             this.buttonDeleteProfession.Text = "Удалить профессию";
             this.buttonDeleteProfession.UseVisualStyleBackColor = true;
+            this.buttonDeleteProfession.Click += new System.EventHandler(this.buttonDeleteProfession_Click);
             // 
             // buttonUpdateProfessions
             // 
@@ -98,6 +99,7 @@
             this.buttonUpdateProfessions.TabIndex = 1;
             this.buttonUpdateProfessions.Text = "Обновить таблицу";
             this.buttonUpdateProfessions.UseVisualStyleBackColor = true;
+            this.buttonUpdateProfessions.Click += new System.EventHandler(this.buttonUpdateProfessions_Click);
             // 
             // groupBox2
             // 
@@ -172,6 +174,7 @@
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonCancel
             // 
@@ -181,6 +184,7 @@
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Отменить";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormPosition
             // 

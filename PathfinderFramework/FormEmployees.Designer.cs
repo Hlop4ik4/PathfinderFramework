@@ -65,6 +65,7 @@
             this.buttonDelete.TabIndex = 1;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonChange
             // 
@@ -74,6 +75,7 @@
             this.buttonChange.TabIndex = 1;
             this.buttonChange.Text = "Изменить";
             this.buttonChange.UseVisualStyleBackColor = true;
+            this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
             // 
             // buttonUpdate
             // 
@@ -83,6 +85,7 @@
             this.buttonUpdate.TabIndex = 1;
             this.buttonUpdate.Text = "Обновить";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // FormEmployees
             // 

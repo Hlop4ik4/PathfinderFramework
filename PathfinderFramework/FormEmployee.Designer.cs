@@ -30,7 +30,7 @@
         {
             this.buttonSave = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSkills = new System.Windows.Forms.DataGridView();
             this.buttonUpdateSkills = new System.Windows.Forms.Button();
             this.buttonDeleteSkill = new System.Windows.Forms.Button();
             this.buttonAddSkill = new System.Windows.Forms.Button();
@@ -43,15 +43,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewDepartments = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDeleteDepartment = new System.Windows.Forms.Button();
+            this.buttonDepartment = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartments)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(401, 538);
+            this.buttonSave.Location = new System.Drawing.Point(870, 511);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 1;
@@ -60,27 +65,27 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.dataGridViewSkills);
             this.groupBox2.Controls.Add(this.buttonUpdateSkills);
             this.groupBox2.Controls.Add(this.buttonDeleteSkill);
             this.groupBox2.Controls.Add(this.buttonAddSkill);
-            this.groupBox2.Location = new System.Drawing.Point(12, 139);
+            this.groupBox2.Location = new System.Drawing.Point(482, 112);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(464, 393);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Навыки";
             // 
-            // dataGridView2
+            // dataGridViewSkills
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 22);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(367, 365);
-            this.dataGridView2.TabIndex = 2;
+            this.dataGridViewSkills.AllowUserToAddRows = false;
+            this.dataGridViewSkills.AllowUserToDeleteRows = false;
+            this.dataGridViewSkills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSkills.Location = new System.Drawing.Point(6, 22);
+            this.dataGridViewSkills.Name = "dataGridViewSkills";
+            this.dataGridViewSkills.ReadOnly = true;
+            this.dataGridViewSkills.Size = new System.Drawing.Size(367, 365);
+            this.dataGridViewSkills.TabIndex = 2;
             // 
             // buttonUpdateSkills
             // 
@@ -90,6 +95,7 @@
             this.buttonUpdateSkills.TabIndex = 1;
             this.buttonUpdateSkills.Text = "Обновить таблицу";
             this.buttonUpdateSkills.UseVisualStyleBackColor = true;
+            this.buttonUpdateSkills.Click += new System.EventHandler(this.buttonUpdateSkills_Click);
             // 
             // buttonDeleteSkill
             // 
@@ -99,6 +105,7 @@
             this.buttonDeleteSkill.TabIndex = 1;
             this.buttonDeleteSkill.Text = "Удалить навык";
             this.buttonDeleteSkill.UseVisualStyleBackColor = true;
+            this.buttonDeleteSkill.Click += new System.EventHandler(this.buttonDeleteSkill_Click);
             // 
             // buttonAddSkill
             // 
@@ -179,41 +186,77 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(320, 538);
+            this.buttonCancel.Location = new System.Drawing.Point(789, 511);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Отменить";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // groupBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(60, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Отдел";
+            this.groupBox1.Controls.Add(this.dataGridViewDepartments);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonDeleteDepartment);
+            this.groupBox1.Controls.Add(this.buttonDepartment);
+            this.groupBox1.Location = new System.Drawing.Point(12, 112);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(464, 393);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Отделы";
             // 
-            // comboBox1
+            // dataGridViewDepartments
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 112);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 10;
+            this.dataGridViewDepartments.AllowUserToAddRows = false;
+            this.dataGridViewDepartments.AllowUserToDeleteRows = false;
+            this.dataGridViewDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDepartments.Location = new System.Drawing.Point(6, 22);
+            this.dataGridViewDepartments.Name = "dataGridViewDepartments";
+            this.dataGridViewDepartments.ReadOnly = true;
+            this.dataGridViewDepartments.Size = new System.Drawing.Size(367, 365);
+            this.dataGridViewDepartments.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(379, 138);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 52);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Обновить таблицу";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonDeleteDepartment
+            // 
+            this.buttonDeleteDepartment.Location = new System.Drawing.Point(379, 80);
+            this.buttonDeleteDepartment.Name = "buttonDeleteDepartment";
+            this.buttonDeleteDepartment.Size = new System.Drawing.Size(75, 52);
+            this.buttonDeleteDepartment.TabIndex = 1;
+            this.buttonDeleteDepartment.Text = "Удалить отдел";
+            this.buttonDeleteDepartment.UseVisualStyleBackColor = true;
+            this.buttonDeleteDepartment.Click += new System.EventHandler(this.buttonDeleteDepartment_Click);
+            // 
+            // buttonDepartment
+            // 
+            this.buttonDepartment.Location = new System.Drawing.Point(379, 22);
+            this.buttonDepartment.Name = "buttonDepartment";
+            this.buttonDepartment.Size = new System.Drawing.Size(75, 52);
+            this.buttonDepartment.TabIndex = 1;
+            this.buttonDepartment.Text = "Добавить отдел";
+            this.buttonDepartment.UseVisualStyleBackColor = true;
+            this.buttonDepartment.Click += new System.EventHandler(this.buttonDepartment_Click);
             // 
             // FormEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 572);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(959, 544);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.dateTimePickerDateOfBirth);
             this.Controls.Add(this.comboBoxEducation);
             this.Controls.Add(this.textBoxFullName);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -224,7 +267,9 @@
             this.Name = "FormEmployee";
             this.Text = "Сотрудник";
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartments)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,7 +278,7 @@
         #endregion
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewSkills;
         private System.Windows.Forms.Button buttonUpdateSkills;
         private System.Windows.Forms.Button buttonDeleteSkill;
         private System.Windows.Forms.Button buttonAddSkill;
@@ -246,7 +291,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridViewDepartments;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDeleteDepartment;
+        private System.Windows.Forms.Button buttonDepartment;
     }
 }

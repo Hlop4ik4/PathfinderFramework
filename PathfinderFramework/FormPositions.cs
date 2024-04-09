@@ -22,5 +22,20 @@ namespace PathfinderFramework
             var form = new FormPosition();
             form.ShowDialog();
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonChange_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

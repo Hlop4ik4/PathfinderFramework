@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace PathfinderFramework
 {
-    public partial class FormProfessionSkill : Form
+    public partial class FormEmployeeDepartments : Form
     {
-        public FormProfessionSkill()
+        public FormEmployeeDepartments()
         {
             InitializeComponent();
+        }
+
+        private void buttonChoose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

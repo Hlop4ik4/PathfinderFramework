@@ -53,6 +53,7 @@
             this.buttonChoose.TabIndex = 1;
             this.buttonChoose.Text = "Выбрать";
             this.buttonChoose.UseVisualStyleBackColor = true;
+            this.buttonChoose.Click += new System.EventHandler(this.buttonChoose_Click);
             // 
             // buttonCancel
             // 
@@ -62,6 +63,7 @@
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormPositionProfession
             // 

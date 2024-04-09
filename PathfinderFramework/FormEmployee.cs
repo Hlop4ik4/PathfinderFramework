@@ -22,5 +22,31 @@ namespace PathfinderFramework
             var form = new FormProfessionEmployeeSkillLevel();
             form.ShowDialog();
         }
+
+        private void buttonDepartment_Click(object sender, EventArgs e)
+        {
+            var form = new FormEmployeeDepartments();
+            form.ShowDialog();
+        }
+
+        private void buttonDeleteDepartment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDeleteSkill_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUpdateSkills_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

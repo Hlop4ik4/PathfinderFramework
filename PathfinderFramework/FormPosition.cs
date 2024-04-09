@@ -22,5 +22,25 @@ namespace PathfinderFramework
             var form = new FormPositionProfession();
             form.ShowDialog();
         }
+
+        private void buttonDeleteProfession_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUpdateProfessions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

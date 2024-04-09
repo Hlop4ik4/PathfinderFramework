@@ -1,6 +1,6 @@
 ﻿namespace PathfinderFramework
 {
-    partial class FormProfessionEmployeeSkillLevel
+    partial class FormEmployeeDepartments
     {
         /// <summary>
         /// Required designer variable.
@@ -42,12 +42,12 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(372, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(429, 376);
             this.dataGridView1.TabIndex = 0;
             // 
             // buttonChoose
             // 
-            this.buttonChoose.Location = new System.Drawing.Point(309, 444);
+            this.buttonChoose.Location = new System.Drawing.Point(366, 394);
             this.buttonChoose.Name = "buttonChoose";
             this.buttonChoose.Size = new System.Drawing.Size(75, 23);
             this.buttonChoose.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(228, 444);
+            this.buttonCancel.Location = new System.Drawing.Point(285, 394);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
@@ -65,16 +65,16 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // FormProfessionEmployeeSkillLevel
+            // FormEmployeeDepartments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 473);
+            this.ClientSize = new System.Drawing.Size(456, 426);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonChoose);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FormProfessionEmployeeSkillLevel";
-            this.Text = "Уровни навыков";
+            this.Name = "FormEmployeeDepartments";
+            this.Text = "Выбор отдела";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

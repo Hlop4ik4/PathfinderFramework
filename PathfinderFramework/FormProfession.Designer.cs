@@ -99,6 +99,7 @@
             this.buttonDeleteSkill.TabIndex = 1;
             this.buttonDeleteSkill.Text = "Удалить навык";
             this.buttonDeleteSkill.UseVisualStyleBackColor = true;
+            this.buttonDeleteSkill.Click += new System.EventHandler(this.buttonDeleteSkill_Click);
             // 
             // buttonUpdateSkills
             // 
@@ -108,6 +109,7 @@
             this.buttonUpdateSkills.TabIndex = 1;
             this.buttonUpdateSkills.Text = "Обновить таблицу";
             this.buttonUpdateSkills.UseVisualStyleBackColor = true;
+            this.buttonUpdateSkills.Click += new System.EventHandler(this.buttonUpdateSkills_Click);
             // 
             // buttonSave
             // 
@@ -117,6 +119,7 @@
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonCancel
             // 
@@ -126,6 +129,7 @@
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Отменить";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormProfession
             // 
