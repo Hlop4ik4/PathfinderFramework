@@ -34,17 +34,32 @@ namespace PathfinderFramework
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonDeleteSkill_Click(object sender, EventArgs e)
         {
 
         }
 
         private void buttonUpdateSkills_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUpdateDepartment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAddDepartment_Click(object sender, EventArgs e)
         {
 
         }

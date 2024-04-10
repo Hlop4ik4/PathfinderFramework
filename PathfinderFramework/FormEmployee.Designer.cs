@@ -45,9 +45,11 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewDepartments = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonUpdateDepartment = new System.Windows.Forms.Button();
             this.buttonDeleteDepartment = new System.Windows.Forms.Button();
-            this.buttonDepartment = new System.Windows.Forms.Button();
+            this.buttonAddDepartment = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -62,6 +64,7 @@
             this.buttonSave.TabIndex = 1;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // groupBox2
             // 
@@ -192,13 +195,14 @@
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Отменить";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridViewDepartments);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonUpdateDepartment);
             this.groupBox1.Controls.Add(this.buttonDeleteDepartment);
-            this.groupBox1.Controls.Add(this.buttonDepartment);
+            this.groupBox1.Controls.Add(this.buttonAddDepartment);
             this.groupBox1.Location = new System.Drawing.Point(12, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 393);
@@ -211,21 +215,24 @@
             this.dataGridViewDepartments.AllowUserToAddRows = false;
             this.dataGridViewDepartments.AllowUserToDeleteRows = false;
             this.dataGridViewDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDepartments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.DepartmentName});
             this.dataGridViewDepartments.Location = new System.Drawing.Point(6, 22);
             this.dataGridViewDepartments.Name = "dataGridViewDepartments";
             this.dataGridViewDepartments.ReadOnly = true;
             this.dataGridViewDepartments.Size = new System.Drawing.Size(367, 365);
             this.dataGridViewDepartments.TabIndex = 2;
             // 
-            // button1
+            // buttonUpdateDepartment
             // 
-            this.button1.Location = new System.Drawing.Point(379, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 52);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Обновить таблицу";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonUpdateDepartment.Location = new System.Drawing.Point(379, 138);
+            this.buttonUpdateDepartment.Name = "buttonUpdateDepartment";
+            this.buttonUpdateDepartment.Size = new System.Drawing.Size(75, 52);
+            this.buttonUpdateDepartment.TabIndex = 1;
+            this.buttonUpdateDepartment.Text = "Обновить таблицу";
+            this.buttonUpdateDepartment.UseVisualStyleBackColor = true;
+            this.buttonUpdateDepartment.Click += new System.EventHandler(this.buttonUpdateDepartment_Click);
             // 
             // buttonDeleteDepartment
             // 
@@ -237,15 +244,28 @@
             this.buttonDeleteDepartment.UseVisualStyleBackColor = true;
             this.buttonDeleteDepartment.Click += new System.EventHandler(this.buttonDeleteDepartment_Click);
             // 
-            // buttonDepartment
+            // buttonAddDepartment
             // 
-            this.buttonDepartment.Location = new System.Drawing.Point(379, 22);
-            this.buttonDepartment.Name = "buttonDepartment";
-            this.buttonDepartment.Size = new System.Drawing.Size(75, 52);
-            this.buttonDepartment.TabIndex = 1;
-            this.buttonDepartment.Text = "Добавить отдел";
-            this.buttonDepartment.UseVisualStyleBackColor = true;
-            this.buttonDepartment.Click += new System.EventHandler(this.buttonDepartment_Click);
+            this.buttonAddDepartment.Location = new System.Drawing.Point(379, 22);
+            this.buttonAddDepartment.Name = "buttonAddDepartment";
+            this.buttonAddDepartment.Size = new System.Drawing.Size(75, 52);
+            this.buttonAddDepartment.TabIndex = 1;
+            this.buttonAddDepartment.Text = "Добавить отдел";
+            this.buttonAddDepartment.UseVisualStyleBackColor = true;
+            this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // DepartmentName
+            // 
+            this.DepartmentName.HeaderText = "Название";
+            this.DepartmentName.Name = "DepartmentName";
+            this.DepartmentName.ReadOnly = true;
             // 
             // FormEmployee
             // 
@@ -293,8 +313,10 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridViewDepartments;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonUpdateDepartment;
         private System.Windows.Forms.Button buttonDeleteDepartment;
-        private System.Windows.Forms.Button buttonDepartment;
+        private System.Windows.Forms.Button buttonAddDepartment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentName;
     }
 }

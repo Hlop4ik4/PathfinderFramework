@@ -26,5 +26,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void FormEmployeeDepartments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

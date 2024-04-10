@@ -99,6 +99,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormEmployees";
             this.Text = "Сотрудники";
+            this.Load += new System.EventHandler(this.FormEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

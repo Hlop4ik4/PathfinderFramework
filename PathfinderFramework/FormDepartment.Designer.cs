@@ -81,6 +81,7 @@
             this.Controls.Add(this.buttonSave);
             this.Name = "FormDepartment";
             this.Text = "Отдел";
+            this.Load += new System.EventHandler(this.FormDepartment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
