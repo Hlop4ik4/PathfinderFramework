@@ -26,5 +26,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void FormProfessionEmployeeSkillLevel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

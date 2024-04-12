@@ -45,11 +45,14 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewDepartments = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonUpdateDepartment = new System.Windows.Forms.Button();
             this.buttonDeleteDepartment = new System.Windows.Forms.Button();
             this.buttonAddDepartment = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DepartmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -84,6 +87,10 @@
             this.dataGridViewSkills.AllowUserToAddRows = false;
             this.dataGridViewSkills.AllowUserToDeleteRows = false;
             this.dataGridViewSkills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSkills.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SkillId,
+            this.SkillName,
+            this.SkillLevel});
             this.dataGridViewSkills.Location = new System.Drawing.Point(6, 22);
             this.dataGridViewSkills.Name = "dataGridViewSkills";
             this.dataGridViewSkills.ReadOnly = true;
@@ -182,6 +189,9 @@
             // comboBoxGender
             // 
             this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский"});
             this.comboBoxGender.Location = new System.Drawing.Point(104, 85);
             this.comboBoxGender.Name = "comboBoxGender";
             this.comboBoxGender.Size = new System.Drawing.Size(200, 21);
@@ -224,6 +234,19 @@
             this.dataGridViewDepartments.Size = new System.Drawing.Size(367, 365);
             this.dataGridViewDepartments.TabIndex = 2;
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // DepartmentName
+            // 
+            this.DepartmentName.HeaderText = "Название";
+            this.DepartmentName.Name = "DepartmentName";
+            this.DepartmentName.ReadOnly = true;
+            // 
             // buttonUpdateDepartment
             // 
             this.buttonUpdateDepartment.Location = new System.Drawing.Point(379, 138);
@@ -254,18 +277,24 @@
             this.buttonAddDepartment.UseVisualStyleBackColor = true;
             this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
             // 
-            // Id
+            // SkillId
             // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
+            this.SkillId.HeaderText = "SkillId";
+            this.SkillId.Name = "SkillId";
+            this.SkillId.ReadOnly = true;
+            this.SkillId.Visible = false;
             // 
-            // DepartmentName
+            // SkillName
             // 
-            this.DepartmentName.HeaderText = "Название";
-            this.DepartmentName.Name = "DepartmentName";
-            this.DepartmentName.ReadOnly = true;
+            this.SkillName.HeaderText = "Название";
+            this.SkillName.Name = "SkillName";
+            this.SkillName.ReadOnly = true;
+            // 
+            // SkillLevel
+            // 
+            this.SkillLevel.HeaderText = "Уровень";
+            this.SkillLevel.Name = "SkillLevel";
+            this.SkillLevel.ReadOnly = true;
             // 
             // FormEmployee
             // 
@@ -286,6 +315,7 @@
             this.Controls.Add(this.buttonSave);
             this.Name = "FormEmployee";
             this.Text = "Сотрудник";
+            this.Load += new System.EventHandler(this.FormEmployee_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -318,5 +348,8 @@
         private System.Windows.Forms.Button buttonAddDepartment;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillLevel;
     }
 }
