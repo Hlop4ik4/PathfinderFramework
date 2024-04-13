@@ -42,5 +42,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void FormProfession_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

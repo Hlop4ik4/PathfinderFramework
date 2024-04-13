@@ -33,10 +33,13 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonDeleteSkill = new System.Windows.Forms.Button();
             this.buttonUpdateSkills = new System.Windows.Forms.Button();
+            this.buttonDeleteSkill = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.SkillLevelId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +68,10 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SkillLevelId,
+            this.SkillName,
+            this.SkillLevel});
             this.dataGridView1.Location = new System.Drawing.Point(6, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -91,16 +98,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Навыки";
             // 
-            // buttonDeleteSkill
-            // 
-            this.buttonDeleteSkill.Location = new System.Drawing.Point(379, 80);
-            this.buttonDeleteSkill.Name = "buttonDeleteSkill";
-            this.buttonDeleteSkill.Size = new System.Drawing.Size(75, 52);
-            this.buttonDeleteSkill.TabIndex = 1;
-            this.buttonDeleteSkill.Text = "Удалить навык";
-            this.buttonDeleteSkill.UseVisualStyleBackColor = true;
-            this.buttonDeleteSkill.Click += new System.EventHandler(this.buttonDeleteSkill_Click);
-            // 
             // buttonUpdateSkills
             // 
             this.buttonUpdateSkills.Location = new System.Drawing.Point(379, 138);
@@ -110,6 +107,16 @@
             this.buttonUpdateSkills.Text = "Обновить таблицу";
             this.buttonUpdateSkills.UseVisualStyleBackColor = true;
             this.buttonUpdateSkills.Click += new System.EventHandler(this.buttonUpdateSkills_Click);
+            // 
+            // buttonDeleteSkill
+            // 
+            this.buttonDeleteSkill.Location = new System.Drawing.Point(379, 80);
+            this.buttonDeleteSkill.Name = "buttonDeleteSkill";
+            this.buttonDeleteSkill.Size = new System.Drawing.Size(75, 52);
+            this.buttonDeleteSkill.TabIndex = 1;
+            this.buttonDeleteSkill.Text = "Удалить навык";
+            this.buttonDeleteSkill.UseVisualStyleBackColor = true;
+            this.buttonDeleteSkill.Click += new System.EventHandler(this.buttonDeleteSkill_Click);
             // 
             // buttonSave
             // 
@@ -131,6 +138,25 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // SkillLevelId
+            // 
+            this.SkillLevelId.HeaderText = "SkillLevelId";
+            this.SkillLevelId.Name = "SkillLevelId";
+            this.SkillLevelId.ReadOnly = true;
+            this.SkillLevelId.Visible = false;
+            // 
+            // SkillName
+            // 
+            this.SkillName.HeaderText = "Название";
+            this.SkillName.Name = "SkillName";
+            this.SkillName.ReadOnly = true;
+            // 
+            // SkillLevel
+            // 
+            this.SkillLevel.HeaderText = "Уровень";
+            this.SkillLevel.Name = "SkillLevel";
+            this.SkillLevel.ReadOnly = true;
+            // 
             // FormProfession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormProfession";
             this.Text = "Профессия";
+            this.Load += new System.EventHandler(this.FormProfession_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -161,5 +188,8 @@
         private System.Windows.Forms.Button buttonDeleteSkill;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillLevelId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillLevel;
     }
 }
