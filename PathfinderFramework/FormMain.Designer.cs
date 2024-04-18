@@ -40,9 +40,14 @@
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCalc = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProfessionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProfessionSkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProfessionSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeSkillLevelIsEnough = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
@@ -78,42 +83,42 @@
             // SkillsToolStripMenuItem
             // 
             this.SkillsToolStripMenuItem.Name = "SkillsToolStripMenuItem";
-            this.SkillsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SkillsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.SkillsToolStripMenuItem.Text = "Навыки";
             this.SkillsToolStripMenuItem.Click += new System.EventHandler(this.SkillsToolStripMenuItem_Click);
             // 
             // EmplyeesToolStripMenuItem
             // 
             this.EmplyeesToolStripMenuItem.Name = "EmplyeesToolStripMenuItem";
-            this.EmplyeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EmplyeesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.EmplyeesToolStripMenuItem.Text = "Сотрудники";
             this.EmplyeesToolStripMenuItem.Click += new System.EventHandler(this.EmplyeesToolStripMenuItem_Click);
             // 
             // ProfessionsToolStripMenuItem
             // 
             this.ProfessionsToolStripMenuItem.Name = "ProfessionsToolStripMenuItem";
-            this.ProfessionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProfessionsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.ProfessionsToolStripMenuItem.Text = "Профессии";
             this.ProfessionsToolStripMenuItem.Click += new System.EventHandler(this.ProfessionsToolStripMenuItem_Click);
             // 
             // SkillLevelsНавыковToolStripMenuItem
             // 
             this.SkillLevelsНавыковToolStripMenuItem.Name = "SkillLevelsНавыковToolStripMenuItem";
-            this.SkillLevelsНавыковToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SkillLevelsНавыковToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.SkillLevelsНавыковToolStripMenuItem.Text = "Уровни навыков";
             this.SkillLevelsНавыковToolStripMenuItem.Click += new System.EventHandler(this.SkillLevelsНавыковToolStripMenuItem_Click);
             // 
             // должностиToolStripMenuItem
             // 
             this.должностиToolStripMenuItem.Name = "должностиToolStripMenuItem";
-            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.должностиToolStripMenuItem.Text = "Должности";
             this.должностиToolStripMenuItem.Click += new System.EventHandler(this.должностиToolStripMenuItem_Click);
             // 
             // отделыToolStripMenuItem
             // 
             this.отделыToolStripMenuItem.Name = "отделыToolStripMenuItem";
-            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.отделыToolStripMenuItem.Text = "Отделы";
             this.отделыToolStripMenuItem.Click += new System.EventHandler(this.отделыToolStripMenuItem_Click);
             // 
@@ -159,15 +164,15 @@
             this.dataGridViewPositions.Size = new System.Drawing.Size(307, 368);
             this.dataGridViewPositions.TabIndex = 0;
             // 
-            // button1
+            // buttonCalc
             // 
-            this.button1.Location = new System.Drawing.Point(415, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Рассчитать разность";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCalc.Location = new System.Drawing.Point(415, 54);
+            this.buttonCalc.Name = "buttonCalc";
+            this.buttonCalc.Size = new System.Drawing.Size(179, 23);
+            this.buttonCalc.TabIndex = 3;
+            this.buttonCalc.Text = "Рассчитать разность";
+            this.buttonCalc.UseVisualStyleBackColor = true;
+            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
             // groupBox3
             // 
@@ -184,11 +189,47 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProfessionName,
+            this.ProfessionSkillName,
+            this.ProfessionSkillLevel,
+            this.EmployeeSkillLevel,
+            this.EmployeeSkillLevelIsEnough});
             this.dataGridView1.Location = new System.Drawing.Point(6, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(327, 330);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ProfessionName
+            // 
+            this.ProfessionName.HeaderText = "Профессия";
+            this.ProfessionName.Name = "ProfessionName";
+            this.ProfessionName.ReadOnly = true;
+            // 
+            // ProfessionSkillName
+            // 
+            this.ProfessionSkillName.HeaderText = "Навык профессии";
+            this.ProfessionSkillName.Name = "ProfessionSkillName";
+            this.ProfessionSkillName.ReadOnly = true;
+            // 
+            // ProfessionSkillLevel
+            // 
+            this.ProfessionSkillLevel.HeaderText = "Уровень навыка профессии";
+            this.ProfessionSkillLevel.Name = "ProfessionSkillLevel";
+            this.ProfessionSkillLevel.ReadOnly = true;
+            // 
+            // EmployeeSkillLevel
+            // 
+            this.EmployeeSkillLevel.HeaderText = "Уровень навыка сотрудника";
+            this.EmployeeSkillLevel.Name = "EmployeeSkillLevel";
+            this.EmployeeSkillLevel.ReadOnly = true;
+            // 
+            // EmployeeSkillLevelIsEnough
+            // 
+            this.EmployeeSkillLevelIsEnough.HeaderText = "Уровень навыка сотрудника достаточен";
+            this.EmployeeSkillLevelIsEnough.Name = "EmployeeSkillLevelIsEnough";
+            this.EmployeeSkillLevelIsEnough.ReadOnly = true;
             // 
             // FormMain
             // 
@@ -196,13 +237,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 450);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCalc);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "Главная";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -229,8 +271,13 @@
         private System.Windows.Forms.DataGridView dataGridViewEmployees;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridViewPositions;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCalc;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionSkillName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionSkillLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeSkillLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeSkillLevelIsEnough;
     }
 }

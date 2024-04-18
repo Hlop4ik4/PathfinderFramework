@@ -42,5 +42,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void FormPosition_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

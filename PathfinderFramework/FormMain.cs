@@ -55,7 +55,12 @@ namespace PathfinderFramework
             form.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCalc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
         {
 
         }

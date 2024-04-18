@@ -75,6 +75,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormPositionProfession";
             this.Text = "Выбор профессии";
+            this.Load += new System.EventHandler(this.FormPositionProfession_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
