@@ -53,6 +53,8 @@
             this.buttonUpdateDepartment = new System.Windows.Forms.Button();
             this.buttonDeleteDepartment = new System.Windows.Forms.Button();
             this.buttonAddDepartment = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxExperience = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -61,7 +63,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(870, 511);
+            this.buttonSave.Location = new System.Drawing.Point(870, 537);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 1;
@@ -75,7 +77,7 @@
             this.groupBox2.Controls.Add(this.buttonUpdateSkills);
             this.groupBox2.Controls.Add(this.buttonDeleteSkill);
             this.groupBox2.Controls.Add(this.buttonAddSkill);
-            this.groupBox2.Location = new System.Drawing.Point(482, 112);
+            this.groupBox2.Location = new System.Drawing.Point(482, 138);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(464, 393);
             this.groupBox2.TabIndex = 5;
@@ -218,7 +220,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(789, 511);
+            this.buttonCancel.Location = new System.Drawing.Point(789, 537);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
@@ -232,7 +234,7 @@
             this.groupBox1.Controls.Add(this.buttonUpdateDepartment);
             this.groupBox1.Controls.Add(this.buttonDeleteDepartment);
             this.groupBox1.Controls.Add(this.buttonAddDepartment);
-            this.groupBox1.Location = new System.Drawing.Point(12, 112);
+            this.groupBox1.Location = new System.Drawing.Point(12, 138);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 393);
             this.groupBox1.TabIndex = 11;
@@ -296,19 +298,37 @@
             this.buttonAddDepartment.UseVisualStyleBackColor = true;
             this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Опыт работы";
+            // 
+            // textBoxExperience
+            // 
+            this.textBoxExperience.Location = new System.Drawing.Point(104, 112);
+            this.textBoxExperience.Name = "textBoxExperience";
+            this.textBoxExperience.Size = new System.Drawing.Size(200, 20);
+            this.textBoxExperience.TabIndex = 7;
+            // 
             // FormEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 544);
+            this.ClientSize = new System.Drawing.Size(959, 572);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.dateTimePickerDateOfBirth);
             this.Controls.Add(this.comboBoxEducation);
+            this.Controls.Add(this.textBoxExperience);
             this.Controls.Add(this.textBoxFullName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.buttonCancel);
@@ -351,5 +371,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillId;
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillLevel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxExperience;
     }
 }

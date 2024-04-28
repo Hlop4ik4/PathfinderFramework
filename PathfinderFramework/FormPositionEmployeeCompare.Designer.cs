@@ -435,7 +435,7 @@
             // 
             // ResultIsSkillLevelEnough
             // 
-            this.ResultIsSkillLevelEnough.HeaderText = "Урвоень навыка подходит";
+            this.ResultIsSkillLevelEnough.HeaderText = "Уровень навыка подходит";
             this.ResultIsSkillLevelEnough.Name = "ResultIsSkillLevelEnough";
             this.ResultIsSkillLevelEnough.ReadOnly = true;
             // 

@@ -148,7 +148,8 @@
             this.comboBoxGender.FormattingEnabled = true;
             this.comboBoxGender.Items.AddRange(new object[] {
             "Мужской",
-            "Женский"});
+            "Женский",
+            "Не важно"});
             this.comboBoxGender.Location = new System.Drawing.Point(87, 43);
             this.comboBoxGender.Name = "comboBoxGender";
             this.comboBoxGender.Size = new System.Drawing.Size(195, 21);
