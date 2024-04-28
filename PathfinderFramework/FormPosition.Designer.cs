@@ -33,6 +33,8 @@
             this.buttonDeleteProfession = new System.Windows.Forms.Button();
             this.buttonAddProfession = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProfId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProfName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxExperience = new System.Windows.Forms.TextBox();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
@@ -44,8 +46,6 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.ProfId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProfName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -107,6 +107,19 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(350, 401);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ProfId
+            // 
+            this.ProfId.HeaderText = "ProfId";
+            this.ProfId.Name = "ProfId";
+            this.ProfId.ReadOnly = true;
+            this.ProfId.Visible = false;
+            // 
+            // ProfName
+            // 
+            this.ProfName.HeaderText = "Название";
+            this.ProfName.Name = "ProfName";
+            this.ProfName.ReadOnly = true;
             // 
             // groupBox2
             // 
@@ -211,19 +224,6 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(382, 20);
             this.textBoxName.TabIndex = 4;
-            // 
-            // ProfId
-            // 
-            this.ProfId.HeaderText = "ProfId";
-            this.ProfId.Name = "ProfId";
-            this.ProfId.ReadOnly = true;
-            this.ProfId.Visible = false;
-            // 
-            // ProfName
-            // 
-            this.ProfName.HeaderText = "Название";
-            this.ProfName.Name = "ProfName";
-            this.ProfName.ReadOnly = true;
             // 
             // FormPosition
             // 

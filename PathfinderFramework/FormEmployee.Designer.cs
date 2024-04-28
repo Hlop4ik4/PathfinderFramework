@@ -31,6 +31,9 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewSkills = new System.Windows.Forms.DataGridView();
+            this.SkillId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonUpdateSkills = new System.Windows.Forms.Button();
             this.buttonDeleteSkill = new System.Windows.Forms.Button();
             this.buttonAddSkill = new System.Windows.Forms.Button();
@@ -50,9 +53,6 @@
             this.buttonUpdateDepartment = new System.Windows.Forms.Button();
             this.buttonDeleteDepartment = new System.Windows.Forms.Button();
             this.buttonAddDepartment = new System.Windows.Forms.Button();
-            this.SkillId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -96,6 +96,25 @@
             this.dataGridViewSkills.ReadOnly = true;
             this.dataGridViewSkills.Size = new System.Drawing.Size(367, 365);
             this.dataGridViewSkills.TabIndex = 2;
+            // 
+            // SkillId
+            // 
+            this.SkillId.HeaderText = "SkillId";
+            this.SkillId.Name = "SkillId";
+            this.SkillId.ReadOnly = true;
+            this.SkillId.Visible = false;
+            // 
+            // SkillName
+            // 
+            this.SkillName.HeaderText = "Название";
+            this.SkillName.Name = "SkillName";
+            this.SkillName.ReadOnly = true;
+            // 
+            // SkillLevel
+            // 
+            this.SkillLevel.HeaderText = "Уровень";
+            this.SkillLevel.Name = "SkillLevel";
+            this.SkillLevel.ReadOnly = true;
             // 
             // buttonUpdateSkills
             // 
@@ -276,25 +295,6 @@
             this.buttonAddDepartment.Text = "Добавить отдел";
             this.buttonAddDepartment.UseVisualStyleBackColor = true;
             this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
-            // 
-            // SkillId
-            // 
-            this.SkillId.HeaderText = "SkillId";
-            this.SkillId.Name = "SkillId";
-            this.SkillId.ReadOnly = true;
-            this.SkillId.Visible = false;
-            // 
-            // SkillName
-            // 
-            this.SkillName.HeaderText = "Название";
-            this.SkillName.Name = "SkillName";
-            this.SkillName.ReadOnly = true;
-            // 
-            // SkillLevel
-            // 
-            this.SkillLevel.HeaderText = "Уровень";
-            this.SkillLevel.Name = "SkillLevel";
-            this.SkillLevel.ReadOnly = true;
             // 
             // FormEmployee
             // 

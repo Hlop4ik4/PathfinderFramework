@@ -41,20 +41,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
             this.buttonCalc = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ProfessionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProfessionSkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProfessionSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeSkillLevelIsEnough = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPositions)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,7 +54,7 @@
             this.справочникиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1015, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(853, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,7 +137,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridViewPositions);
-            this.groupBox2.Location = new System.Drawing.Point(683, 45);
+            this.groupBox2.Location = new System.Drawing.Point(522, 45);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(319, 393);
             this.groupBox2.TabIndex = 2;
@@ -166,7 +157,7 @@
             // 
             // buttonCalc
             // 
-            this.buttonCalc.Location = new System.Drawing.Point(415, 54);
+            this.buttonCalc.Location = new System.Drawing.Point(337, 45);
             this.buttonCalc.Name = "buttonCalc";
             this.buttonCalc.Size = new System.Drawing.Size(179, 23);
             this.buttonCalc.TabIndex = 3;
@@ -174,69 +165,11 @@
             this.buttonCalc.UseVisualStyleBackColor = true;
             this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(337, 83);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(340, 355);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Результат";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProfessionName,
-            this.ProfessionSkillName,
-            this.ProfessionSkillLevel,
-            this.EmployeeSkillLevel,
-            this.EmployeeSkillLevelIsEnough});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(327, 330);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // ProfessionName
-            // 
-            this.ProfessionName.HeaderText = "Профессия";
-            this.ProfessionName.Name = "ProfessionName";
-            this.ProfessionName.ReadOnly = true;
-            // 
-            // ProfessionSkillName
-            // 
-            this.ProfessionSkillName.HeaderText = "Навык профессии";
-            this.ProfessionSkillName.Name = "ProfessionSkillName";
-            this.ProfessionSkillName.ReadOnly = true;
-            // 
-            // ProfessionSkillLevel
-            // 
-            this.ProfessionSkillLevel.HeaderText = "Уровень навыка профессии";
-            this.ProfessionSkillLevel.Name = "ProfessionSkillLevel";
-            this.ProfessionSkillLevel.ReadOnly = true;
-            // 
-            // EmployeeSkillLevel
-            // 
-            this.EmployeeSkillLevel.HeaderText = "Уровень навыка сотрудника";
-            this.EmployeeSkillLevel.Name = "EmployeeSkillLevel";
-            this.EmployeeSkillLevel.ReadOnly = true;
-            // 
-            // EmployeeSkillLevelIsEnough
-            // 
-            this.EmployeeSkillLevelIsEnough.HeaderText = "Уровень навыка сотрудника достаточен";
-            this.EmployeeSkillLevelIsEnough.Name = "EmployeeSkillLevelIsEnough";
-            this.EmployeeSkillLevelIsEnough.ReadOnly = true;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 450);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(853, 450);
             this.Controls.Add(this.buttonCalc);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -251,8 +184,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPositions)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,12 +203,5 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridViewPositions;
         private System.Windows.Forms.Button buttonCalc;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionSkillName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProfessionSkillLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeSkillLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeSkillLevelIsEnough;
     }
 }
