@@ -55,6 +55,8 @@
             this.buttonAddDepartment = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxExperience = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxPosition = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,7 +65,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(870, 537);
+            this.buttonSave.Location = new System.Drawing.Point(870, 564);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 1;
@@ -77,7 +79,7 @@
             this.groupBox2.Controls.Add(this.buttonUpdateSkills);
             this.groupBox2.Controls.Add(this.buttonDeleteSkill);
             this.groupBox2.Controls.Add(this.buttonAddSkill);
-            this.groupBox2.Location = new System.Drawing.Point(482, 138);
+            this.groupBox2.Location = new System.Drawing.Point(482, 165);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(464, 393);
             this.groupBox2.TabIndex = 5;
@@ -220,7 +222,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(789, 537);
+            this.buttonCancel.Location = new System.Drawing.Point(789, 564);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
@@ -234,7 +236,7 @@
             this.groupBox1.Controls.Add(this.buttonUpdateDepartment);
             this.groupBox1.Controls.Add(this.buttonDeleteDepartment);
             this.groupBox1.Controls.Add(this.buttonAddDepartment);
-            this.groupBox1.Location = new System.Drawing.Point(12, 138);
+            this.groupBox1.Location = new System.Drawing.Point(12, 165);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 393);
             this.groupBox1.TabIndex = 11;
@@ -314,17 +316,39 @@
             this.textBoxExperience.Size = new System.Drawing.Size(200, 20);
             this.textBoxExperience.TabIndex = 7;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(33, 141);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Должность";
+            // 
+            // comboBoxPosition
+            // 
+            this.comboBoxPosition.FormattingEnabled = true;
+            this.comboBoxPosition.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский"});
+            this.comboBoxPosition.Location = new System.Drawing.Point(104, 138);
+            this.comboBoxPosition.Name = "comboBoxPosition";
+            this.comboBoxPosition.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxPosition.TabIndex = 10;
+            // 
             // FormEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 572);
+            this.ClientSize = new System.Drawing.Size(959, 596);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.comboBoxPosition);
             this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.dateTimePickerDateOfBirth);
             this.Controls.Add(this.comboBoxEducation);
             this.Controls.Add(this.textBoxExperience);
             this.Controls.Add(this.textBoxFullName);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -373,5 +397,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillLevel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxExperience;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBoxPosition;
     }
 }
