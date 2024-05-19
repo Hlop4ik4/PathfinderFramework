@@ -43,13 +43,13 @@ namespace PathfinderFramework
             form.ShowDialog();
         }
 
-        private void должностиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PositionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new FormPositions();
             form.ShowDialog();
         }
 
-        private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DepartmentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new FormDepartments();
             form.ShowDialog();
@@ -61,6 +61,11 @@ namespace PathfinderFramework
         }
 
         private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TrainingCoursesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

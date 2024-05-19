@@ -54,6 +54,10 @@
             this.textBoxResultGender = new System.Windows.Forms.TextBox();
             this.textBoxResultExperience = new System.Windows.Forms.TextBox();
             this.dataGridViewResult = new System.Windows.Forms.DataGridView();
+            this.ResultSkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResultPositionSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResultEmployeeSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResultIsSkillLevelEnough = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,10 +68,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.ResultSkillName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResultPositionSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResultEmployeeSkillLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResultIsSkillLevelEnough = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxCurrentPosition = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployeeSkills)).BeginInit();
@@ -181,9 +183,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridViewEmployeeSkills);
-            this.groupBox3.Location = new System.Drawing.Point(842, 149);
+            this.groupBox3.Location = new System.Drawing.Point(842, 177);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(379, 287);
+            this.groupBox3.Size = new System.Drawing.Size(379, 259);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Навыки сотрудника";
@@ -322,6 +324,30 @@
             this.dataGridViewResult.Size = new System.Drawing.Size(445, 323);
             this.dataGridViewResult.TabIndex = 2;
             // 
+            // ResultSkillName
+            // 
+            this.ResultSkillName.HeaderText = "Название";
+            this.ResultSkillName.Name = "ResultSkillName";
+            this.ResultSkillName.ReadOnly = true;
+            // 
+            // ResultPositionSkillLevel
+            // 
+            this.ResultPositionSkillLevel.HeaderText = "Уровень у должности";
+            this.ResultPositionSkillLevel.Name = "ResultPositionSkillLevel";
+            this.ResultPositionSkillLevel.ReadOnly = true;
+            // 
+            // ResultEmployeeSkillLevel
+            // 
+            this.ResultEmployeeSkillLevel.HeaderText = "Уровень у сотрудника";
+            this.ResultEmployeeSkillLevel.Name = "ResultEmployeeSkillLevel";
+            this.ResultEmployeeSkillLevel.ReadOnly = true;
+            // 
+            // ResultIsSkillLevelEnough
+            // 
+            this.ResultIsSkillLevelEnough.HeaderText = "Уровень навыка подходит";
+            this.ResultIsSkillLevelEnough.Name = "ResultIsSkillLevelEnough";
+            this.ResultIsSkillLevelEnough.ReadOnly = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -353,20 +379,22 @@
             // 
             this.groupBox5.Controls.Add(this.textBoxEmployeeEducation);
             this.groupBox5.Controls.Add(this.textBoxEmployeeGender);
+            this.groupBox5.Controls.Add(this.textBoxCurrentPosition);
             this.groupBox5.Controls.Add(this.textBoxEmployeeExperience);
+            this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Location = new System.Drawing.Point(844, 41);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(377, 102);
+            this.groupBox5.Size = new System.Drawing.Size(377, 130);
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Данные сотрудника";
             // 
             // textBoxEmployeeEducation
             // 
-            this.textBoxEmployeeEducation.Location = new System.Drawing.Point(87, 16);
+            this.textBoxEmployeeEducation.Location = new System.Drawing.Point(122, 18);
             this.textBoxEmployeeEducation.Name = "textBoxEmployeeEducation";
             this.textBoxEmployeeEducation.ReadOnly = true;
             this.textBoxEmployeeEducation.Size = new System.Drawing.Size(195, 20);
@@ -374,7 +402,7 @@
             // 
             // textBoxEmployeeGender
             // 
-            this.textBoxEmployeeGender.Location = new System.Drawing.Point(87, 43);
+            this.textBoxEmployeeGender.Location = new System.Drawing.Point(122, 44);
             this.textBoxEmployeeGender.Name = "textBoxEmployeeGender";
             this.textBoxEmployeeGender.ReadOnly = true;
             this.textBoxEmployeeGender.Size = new System.Drawing.Size(195, 20);
@@ -382,7 +410,7 @@
             // 
             // textBoxEmployeeExperience
             // 
-            this.textBoxEmployeeExperience.Location = new System.Drawing.Point(87, 70);
+            this.textBoxEmployeeExperience.Location = new System.Drawing.Point(122, 70);
             this.textBoxEmployeeExperience.Name = "textBoxEmployeeExperience";
             this.textBoxEmployeeExperience.ReadOnly = true;
             this.textBoxEmployeeExperience.Size = new System.Drawing.Size(195, 20);
@@ -391,7 +419,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(47, 73);
+            this.label9.Location = new System.Drawing.Point(82, 73);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 13);
             this.label9.TabIndex = 0;
@@ -400,7 +428,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(54, 46);
+            this.label10.Location = new System.Drawing.Point(89, 47);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 13);
             this.label10.TabIndex = 0;
@@ -409,35 +437,28 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 19);
+            this.label11.Location = new System.Drawing.Point(41, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "Образование";
             // 
-            // ResultSkillName
+            // label12
             // 
-            this.ResultSkillName.HeaderText = "Название";
-            this.ResultSkillName.Name = "ResultSkillName";
-            this.ResultSkillName.ReadOnly = true;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 99);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Текущая должность";
             // 
-            // ResultPositionSkillLevel
+            // textBoxCurrentPosition
             // 
-            this.ResultPositionSkillLevel.HeaderText = "Уровень у должности";
-            this.ResultPositionSkillLevel.Name = "ResultPositionSkillLevel";
-            this.ResultPositionSkillLevel.ReadOnly = true;
-            // 
-            // ResultEmployeeSkillLevel
-            // 
-            this.ResultEmployeeSkillLevel.HeaderText = "Уровень у сотрудника";
-            this.ResultEmployeeSkillLevel.Name = "ResultEmployeeSkillLevel";
-            this.ResultEmployeeSkillLevel.ReadOnly = true;
-            // 
-            // ResultIsSkillLevelEnough
-            // 
-            this.ResultIsSkillLevelEnough.HeaderText = "Уровень навыка подходит";
-            this.ResultIsSkillLevelEnough.Name = "ResultIsSkillLevelEnough";
-            this.ResultIsSkillLevelEnough.ReadOnly = true;
+            this.textBoxCurrentPosition.Location = new System.Drawing.Point(122, 96);
+            this.textBoxCurrentPosition.Name = "textBoxCurrentPosition";
+            this.textBoxCurrentPosition.ReadOnly = true;
+            this.textBoxCurrentPosition.Size = new System.Drawing.Size(195, 20);
+            this.textBoxCurrentPosition.TabIndex = 2;
             // 
             // FormPositionEmployeeCompare
             // 
@@ -514,5 +535,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ResultPositionSkillLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn ResultEmployeeSkillLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn ResultIsSkillLevelEnough;
+        private System.Windows.Forms.TextBox textBoxCurrentPosition;
+        private System.Windows.Forms.Label label12;
     }
 }

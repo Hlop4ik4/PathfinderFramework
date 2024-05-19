@@ -76,6 +76,12 @@
     <Compile Include="FormEmployees.Designer.cs">
       <DependentUpon>FormEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEmployeeTrainingCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeTrainingCourse.Designer.cs">
+      <DependentUpon>FormEmployeeTrainingCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,18 @@
     <Compile Include="FormSkills.Designer.cs">
       <DependentUpon>FormSkills.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTrainingCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainingCourse.Designer.cs">
+      <DependentUpon>FormTrainingCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainingCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainingCourses.Designer.cs">
+      <DependentUpon>FormTrainingCourses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDepartment.resx">
@@ -158,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmployees.resx">
       <DependentUpon>FormEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeTrainingCourse.resx">
+      <DependentUpon>FormEmployeeTrainingCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -191,6 +212,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSkills.resx">
       <DependentUpon>FormSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainingCourse.resx">
+      <DependentUpon>FormTrainingCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainingCourses.resx">
+      <DependentUpon>FormTrainingCourses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
