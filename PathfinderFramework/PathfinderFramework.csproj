@@ -154,6 +154,12 @@
     <Compile Include="FormTrainingCourse.Designer.cs">
       <DependentUpon>FormTrainingCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTrainingCourseEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainingCourseEmployees.Designer.cs">
+      <DependentUpon>FormTrainingCourseEmployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTrainingCourses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrainingCourse.resx">
       <DependentUpon>FormTrainingCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainingCourseEmployees.resx">
+      <DependentUpon>FormTrainingCourseEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrainingCourses.resx">
       <DependentUpon>FormTrainingCourses.cs</DependentUpon>

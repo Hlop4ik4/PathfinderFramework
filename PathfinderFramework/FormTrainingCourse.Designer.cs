@@ -50,12 +50,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.comboBoxSkillLevel = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonChangeEmployee = new System.Windows.Forms.Button();
             this.buttonDeleteEmployee = new System.Windows.Forms.Button();
             this.buttonAddEmployee = new System.Windows.Forms.Button();
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonChange = new System.Windows.Forms.Button();
+            this.EmployeeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeTrainingCourseIsComplete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeCertificateImagePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.SuspendLayout();
@@ -244,20 +248,30 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.buttonChange);
+            this.groupBox1.Controls.Add(this.buttonChangeEmployee);
             this.groupBox1.Controls.Add(this.buttonDeleteEmployee);
             this.groupBox1.Controls.Add(this.buttonAddEmployee);
             this.groupBox1.Controls.Add(this.dataGridViewEmployees);
             this.groupBox1.Location = new System.Drawing.Point(11, 138);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 199);
+            this.groupBox1.Size = new System.Drawing.Size(586, 199);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Сотрудники";
             // 
+            // buttonChangeEmployee
+            // 
+            this.buttonChangeEmployee.Location = new System.Drawing.Point(505, 77);
+            this.buttonChangeEmployee.Name = "buttonChangeEmployee";
+            this.buttonChangeEmployee.Size = new System.Drawing.Size(75, 23);
+            this.buttonChangeEmployee.TabIndex = 8;
+            this.buttonChangeEmployee.Text = "Изменить";
+            this.buttonChangeEmployee.UseVisualStyleBackColor = true;
+            this.buttonChangeEmployee.Click += new System.EventHandler(this.buttonChangeEmployee_Click);
+            // 
             // buttonDeleteEmployee
             // 
-            this.buttonDeleteEmployee.Location = new System.Drawing.Point(190, 48);
+            this.buttonDeleteEmployee.Location = new System.Drawing.Point(505, 48);
             this.buttonDeleteEmployee.Name = "buttonDeleteEmployee";
             this.buttonDeleteEmployee.Size = new System.Drawing.Size(75, 23);
             this.buttonDeleteEmployee.TabIndex = 8;
@@ -267,7 +281,7 @@
             // 
             // buttonAddEmployee
             // 
-            this.buttonAddEmployee.Location = new System.Drawing.Point(190, 19);
+            this.buttonAddEmployee.Location = new System.Drawing.Point(505, 19);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
             this.buttonAddEmployee.Size = new System.Drawing.Size(75, 23);
             this.buttonAddEmployee.TabIndex = 8;
@@ -280,10 +294,15 @@
             this.dataGridViewEmployees.AllowUserToAddRows = false;
             this.dataGridViewEmployees.AllowUserToDeleteRows = false;
             this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EmployeeId,
+            this.EmployeeFullName,
+            this.EmployeeTrainingCourseIsComplete,
+            this.EmployeeCertificateImagePath});
             this.dataGridViewEmployees.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewEmployees.Name = "dataGridViewEmployees";
             this.dataGridViewEmployees.ReadOnly = true;
-            this.dataGridViewEmployees.Size = new System.Drawing.Size(178, 174);
+            this.dataGridViewEmployees.Size = new System.Drawing.Size(493, 174);
             this.dataGridViewEmployees.TabIndex = 0;
             // 
             // buttonSave
@@ -294,6 +313,7 @@
             this.buttonSave.TabIndex = 8;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonCancel
             // 
@@ -303,16 +323,33 @@
             this.buttonCancel.TabIndex = 8;
             this.buttonCancel.Text = "Отменить";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // buttonChange
+            // EmployeeId
             // 
-            this.buttonChange.Location = new System.Drawing.Point(190, 77);
-            this.buttonChange.Name = "buttonChange";
-            this.buttonChange.Size = new System.Drawing.Size(75, 23);
-            this.buttonChange.TabIndex = 8;
-            this.buttonChange.Text = "Изменить";
-            this.buttonChange.UseVisualStyleBackColor = true;
-            this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
+            this.EmployeeId.HeaderText = "Id";
+            this.EmployeeId.Name = "EmployeeId";
+            this.EmployeeId.ReadOnly = true;
+            this.EmployeeId.Visible = false;
+            // 
+            // EmployeeFullName
+            // 
+            this.EmployeeFullName.HeaderText = "Полное имя";
+            this.EmployeeFullName.Name = "EmployeeFullName";
+            this.EmployeeFullName.ReadOnly = true;
+            // 
+            // EmployeeTrainingCourseIsComplete
+            // 
+            this.EmployeeTrainingCourseIsComplete.HeaderText = "Курс завершен";
+            this.EmployeeTrainingCourseIsComplete.Name = "EmployeeTrainingCourseIsComplete";
+            this.EmployeeTrainingCourseIsComplete.ReadOnly = true;
+            // 
+            // EmployeeCertificateImagePath
+            // 
+            this.EmployeeCertificateImagePath.HeaderText = "CertificateImagePath";
+            this.EmployeeCertificateImagePath.Name = "EmployeeCertificateImagePath";
+            this.EmployeeCertificateImagePath.ReadOnly = true;
+            this.EmployeeCertificateImagePath.Visible = false;
             // 
             // FormTrainingCourse
             // 
@@ -381,6 +418,10 @@
         private System.Windows.Forms.Button buttonDeleteEmployee;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonChange;
+        private System.Windows.Forms.Button buttonChangeEmployee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeTrainingCourseIsComplete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeCertificateImagePath;
     }
 }
