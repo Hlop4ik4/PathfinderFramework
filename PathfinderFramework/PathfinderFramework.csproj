@@ -106,6 +106,24 @@
     <Compile Include="FormPosition.Designer.cs">
       <DependentUpon>FormPosition.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPositionChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPositionChange.Designer.cs">
+      <DependentUpon>FormPositionChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPositionChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPositionChanges.Designer.cs">
+      <DependentUpon>FormPositionChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPositionChangeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPositionChangeView.Designer.cs">
+      <DependentUpon>FormPositionChangeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPositionEmployeeCompare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +239,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPosition.resx">
       <DependentUpon>FormPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPositionChange.resx">
+      <DependentUpon>FormPositionChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPositionChanges.resx">
+      <DependentUpon>FormPositionChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPositionChangeView.resx">
+      <DependentUpon>FormPositionChangeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPositionEmployeeCompare.resx">
       <DependentUpon>FormPositionEmployeeCompare.cs</DependentUpon>
