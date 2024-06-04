@@ -42,6 +42,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
             this.buttonCalc = new System.Windows.Forms.Button();
+            this.прохождениеКурсовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TrainingCourseCompletingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CertificatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
@@ -52,7 +55,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.справочникиToolStripMenuItem});
+            this.справочникиToolStripMenuItem,
+            this.прохождениеКурсовToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(853, 24);
@@ -76,49 +80,49 @@
             // SkillsToolStripMenuItem
             // 
             this.SkillsToolStripMenuItem.Name = "SkillsToolStripMenuItem";
-            this.SkillsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SkillsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.SkillsToolStripMenuItem.Text = "Навыки";
             this.SkillsToolStripMenuItem.Click += new System.EventHandler(this.SkillsToolStripMenuItem_Click);
             // 
             // EmplyeesToolStripMenuItem
             // 
             this.EmplyeesToolStripMenuItem.Name = "EmplyeesToolStripMenuItem";
-            this.EmplyeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EmplyeesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.EmplyeesToolStripMenuItem.Text = "Сотрудники";
             this.EmplyeesToolStripMenuItem.Click += new System.EventHandler(this.EmplyeesToolStripMenuItem_Click);
             // 
             // ProfessionsToolStripMenuItem
             // 
             this.ProfessionsToolStripMenuItem.Name = "ProfessionsToolStripMenuItem";
-            this.ProfessionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProfessionsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.ProfessionsToolStripMenuItem.Text = "Профессии";
             this.ProfessionsToolStripMenuItem.Click += new System.EventHandler(this.ProfessionsToolStripMenuItem_Click);
             // 
             // SkillLevelsНавыковToolStripMenuItem
             // 
             this.SkillLevelsНавыковToolStripMenuItem.Name = "SkillLevelsНавыковToolStripMenuItem";
-            this.SkillLevelsНавыковToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SkillLevelsНавыковToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.SkillLevelsНавыковToolStripMenuItem.Text = "Уровни навыков";
             this.SkillLevelsНавыковToolStripMenuItem.Click += new System.EventHandler(this.SkillLevelsНавыковToolStripMenuItem_Click);
             // 
             // PositionsToolStripMenuItem
             // 
             this.PositionsToolStripMenuItem.Name = "PositionsToolStripMenuItem";
-            this.PositionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PositionsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.PositionsToolStripMenuItem.Text = "Должности";
             this.PositionsToolStripMenuItem.Click += new System.EventHandler(this.PositionsToolStripMenuItem_Click);
             // 
             // DepartmentsToolStripMenuItem
             // 
             this.DepartmentsToolStripMenuItem.Name = "DepartmentsToolStripMenuItem";
-            this.DepartmentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DepartmentsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.DepartmentsToolStripMenuItem.Text = "Отделы";
             this.DepartmentsToolStripMenuItem.Click += new System.EventHandler(this.DepartmentsToolStripMenuItem_Click);
             // 
             // TrainingCoursesToolStripMenuItem
             // 
             this.TrainingCoursesToolStripMenuItem.Name = "TrainingCoursesToolStripMenuItem";
-            this.TrainingCoursesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.TrainingCoursesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.TrainingCoursesToolStripMenuItem.Text = "Курсы";
             this.TrainingCoursesToolStripMenuItem.Click += new System.EventHandler(this.TrainingCoursesToolStripMenuItem_Click);
             // 
@@ -174,6 +178,29 @@
             this.buttonCalc.UseVisualStyleBackColor = true;
             this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
+            // прохождениеКурсовToolStripMenuItem
+            // 
+            this.прохождениеКурсовToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TrainingCourseCompletingsToolStripMenuItem,
+            this.CertificatesToolStripMenuItem});
+            this.прохождениеКурсовToolStripMenuItem.Name = "прохождениеКурсовToolStripMenuItem";
+            this.прохождениеКурсовToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.прохождениеКурсовToolStripMenuItem.Text = "Прохождение курсов";
+            // 
+            // TrainingCourseCompletingsToolStripMenuItem
+            // 
+            this.TrainingCourseCompletingsToolStripMenuItem.Name = "TrainingCourseCompletingsToolStripMenuItem";
+            this.TrainingCourseCompletingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.TrainingCourseCompletingsToolStripMenuItem.Text = "Курсы";
+            this.TrainingCourseCompletingsToolStripMenuItem.Click += new System.EventHandler(this.TrainingCourseCompletingsToolStripMenuItem_Click);
+            // 
+            // CertificatesToolStripMenuItem
+            // 
+            this.CertificatesToolStripMenuItem.Name = "CertificatesToolStripMenuItem";
+            this.CertificatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CertificatesToolStripMenuItem.Text = "Сертификаты";
+            this.CertificatesToolStripMenuItem.Click += new System.EventHandler(this.CertificatesToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,5 +240,8 @@
         private System.Windows.Forms.DataGridView dataGridViewPositions;
         private System.Windows.Forms.Button buttonCalc;
         private System.Windows.Forms.ToolStripMenuItem TrainingCoursesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem прохождениеКурсовToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TrainingCourseCompletingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CertificatesToolStripMenuItem;
     }
 }

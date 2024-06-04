@@ -49,19 +49,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBoxSkillLevel = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonChangeEmployee = new System.Windows.Forms.Button();
-            this.buttonDeleteEmployee = new System.Windows.Forms.Button();
-            this.buttonAddEmployee = new System.Windows.Forms.Button();
-            this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.EmployeeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeTrainingCourseIsComplete = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeCertificateImagePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -246,68 +235,9 @@
             this.comboBoxSkillLevel.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSkillLevel.TabIndex = 3;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonChangeEmployee);
-            this.groupBox1.Controls.Add(this.buttonDeleteEmployee);
-            this.groupBox1.Controls.Add(this.buttonAddEmployee);
-            this.groupBox1.Controls.Add(this.dataGridViewEmployees);
-            this.groupBox1.Location = new System.Drawing.Point(11, 138);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(586, 199);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Сотрудники";
-            // 
-            // buttonChangeEmployee
-            // 
-            this.buttonChangeEmployee.Location = new System.Drawing.Point(505, 77);
-            this.buttonChangeEmployee.Name = "buttonChangeEmployee";
-            this.buttonChangeEmployee.Size = new System.Drawing.Size(75, 23);
-            this.buttonChangeEmployee.TabIndex = 8;
-            this.buttonChangeEmployee.Text = "Изменить";
-            this.buttonChangeEmployee.UseVisualStyleBackColor = true;
-            this.buttonChangeEmployee.Click += new System.EventHandler(this.buttonChangeEmployee_Click);
-            // 
-            // buttonDeleteEmployee
-            // 
-            this.buttonDeleteEmployee.Location = new System.Drawing.Point(505, 48);
-            this.buttonDeleteEmployee.Name = "buttonDeleteEmployee";
-            this.buttonDeleteEmployee.Size = new System.Drawing.Size(75, 23);
-            this.buttonDeleteEmployee.TabIndex = 8;
-            this.buttonDeleteEmployee.Text = "Удалить";
-            this.buttonDeleteEmployee.UseVisualStyleBackColor = true;
-            this.buttonDeleteEmployee.Click += new System.EventHandler(this.buttonDeleteEmployee_Click);
-            // 
-            // buttonAddEmployee
-            // 
-            this.buttonAddEmployee.Location = new System.Drawing.Point(505, 19);
-            this.buttonAddEmployee.Name = "buttonAddEmployee";
-            this.buttonAddEmployee.Size = new System.Drawing.Size(75, 23);
-            this.buttonAddEmployee.TabIndex = 8;
-            this.buttonAddEmployee.Text = "Выбрать";
-            this.buttonAddEmployee.UseVisualStyleBackColor = true;
-            this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
-            // 
-            // dataGridViewEmployees
-            // 
-            this.dataGridViewEmployees.AllowUserToAddRows = false;
-            this.dataGridViewEmployees.AllowUserToDeleteRows = false;
-            this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.EmployeeId,
-            this.EmployeeFullName,
-            this.EmployeeTrainingCourseIsComplete,
-            this.EmployeeCertificateImagePath});
-            this.dataGridViewEmployees.Location = new System.Drawing.Point(6, 19);
-            this.dataGridViewEmployees.Name = "dataGridViewEmployees";
-            this.dataGridViewEmployees.ReadOnly = true;
-            this.dataGridViewEmployees.Size = new System.Drawing.Size(493, 174);
-            this.dataGridViewEmployees.TabIndex = 0;
-            // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(525, 352);
+            this.buttonSave.Location = new System.Drawing.Point(513, 154);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 8;
@@ -317,7 +247,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(444, 352);
+            this.buttonCancel.Location = new System.Drawing.Point(432, 154);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 8;
@@ -325,38 +255,11 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // EmployeeId
-            // 
-            this.EmployeeId.HeaderText = "Id";
-            this.EmployeeId.Name = "EmployeeId";
-            this.EmployeeId.ReadOnly = true;
-            this.EmployeeId.Visible = false;
-            // 
-            // EmployeeFullName
-            // 
-            this.EmployeeFullName.HeaderText = "Полное имя";
-            this.EmployeeFullName.Name = "EmployeeFullName";
-            this.EmployeeFullName.ReadOnly = true;
-            // 
-            // EmployeeTrainingCourseIsComplete
-            // 
-            this.EmployeeTrainingCourseIsComplete.HeaderText = "Курс завершен";
-            this.EmployeeTrainingCourseIsComplete.Name = "EmployeeTrainingCourseIsComplete";
-            this.EmployeeTrainingCourseIsComplete.ReadOnly = true;
-            // 
-            // EmployeeCertificateImagePath
-            // 
-            this.EmployeeCertificateImagePath.HeaderText = "CertificateImagePath";
-            this.EmployeeCertificateImagePath.Name = "EmployeeCertificateImagePath";
-            this.EmployeeCertificateImagePath.ReadOnly = true;
-            this.EmployeeCertificateImagePath.Visible = false;
-            // 
             // FormTrainingCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 384);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(612, 186);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.comboBoxTrainingType);
@@ -382,8 +285,6 @@
             this.Name = "FormTrainingCourse";
             this.Text = "Курс";
             this.Load += new System.EventHandler(this.FormTrainingCourse_Load);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,16 +313,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBoxSkillLevel;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridViewEmployees;
-        private System.Windows.Forms.Button buttonAddEmployee;
-        private System.Windows.Forms.Button buttonDeleteEmployee;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonChangeEmployee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeFullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeTrainingCourseIsComplete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeCertificateImagePath;
     }
 }

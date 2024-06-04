@@ -1,6 +1,6 @@
 ﻿namespace PathfinderFramework
 {
-    partial class FormTrainingCourseEmployees
+    partial class FormTrainingCourseCompletingEmployees
     {
         /// <summary>
         /// Required designer variable.

@@ -64,12 +64,12 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBoxEmployeeEducation = new System.Windows.Forms.TextBox();
             this.textBoxEmployeeGender = new System.Windows.Forms.TextBox();
+            this.textBoxCurrentPosition = new System.Windows.Forms.TextBox();
             this.textBoxEmployeeExperience = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxCurrentPosition = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployeeSkills)).BeginInit();
@@ -202,7 +202,7 @@
             this.dataGridViewEmployeeSkills.Location = new System.Drawing.Point(6, 22);
             this.dataGridViewEmployeeSkills.Name = "dataGridViewEmployeeSkills";
             this.dataGridViewEmployeeSkills.ReadOnly = true;
-            this.dataGridViewEmployeeSkills.Size = new System.Drawing.Size(367, 260);
+            this.dataGridViewEmployeeSkills.Size = new System.Drawing.Size(367, 229);
             this.dataGridViewEmployeeSkills.TabIndex = 2;
             // 
             // SkillId
@@ -408,6 +408,14 @@
             this.textBoxEmployeeGender.Size = new System.Drawing.Size(195, 20);
             this.textBoxEmployeeGender.TabIndex = 2;
             // 
+            // textBoxCurrentPosition
+            // 
+            this.textBoxCurrentPosition.Location = new System.Drawing.Point(122, 96);
+            this.textBoxCurrentPosition.Name = "textBoxCurrentPosition";
+            this.textBoxCurrentPosition.ReadOnly = true;
+            this.textBoxCurrentPosition.Size = new System.Drawing.Size(195, 20);
+            this.textBoxCurrentPosition.TabIndex = 2;
+            // 
             // textBoxEmployeeExperience
             // 
             this.textBoxEmployeeExperience.Location = new System.Drawing.Point(122, 70);
@@ -415,6 +423,15 @@
             this.textBoxEmployeeExperience.ReadOnly = true;
             this.textBoxEmployeeExperience.Size = new System.Drawing.Size(195, 20);
             this.textBoxEmployeeExperience.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 99);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Текущая должность";
             // 
             // label9
             // 
@@ -442,23 +459,6 @@
             this.label11.Size = new System.Drawing.Size(75, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "Образование";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 99);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(110, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Текущая должность";
-            // 
-            // textBoxCurrentPosition
-            // 
-            this.textBoxCurrentPosition.Location = new System.Drawing.Point(122, 96);
-            this.textBoxCurrentPosition.Name = "textBoxCurrentPosition";
-            this.textBoxCurrentPosition.ReadOnly = true;
-            this.textBoxCurrentPosition.Size = new System.Drawing.Size(195, 20);
-            this.textBoxCurrentPosition.TabIndex = 2;
             // 
             // FormPositionEmployeeCompare
             // 

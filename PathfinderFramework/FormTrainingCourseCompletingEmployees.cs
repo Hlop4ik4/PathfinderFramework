@@ -10,29 +10,24 @@ using System.Windows.Forms;
 
 namespace PathfinderFramework
 {
-    public partial class FormEmployeeTrainingCourse : Form
+    public partial class FormTrainingCourseCompletingEmployees : Form
     {
-        public FormEmployeeTrainingCourse()
+        public FormTrainingCourseCompletingEmployees()
         {
             InitializeComponent();
         }
 
-        private void buttonChooseCertitfaceImagePath_Click(object sender, EventArgs e)
+        private void FormTrainingCourseEmployees_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
+        private void buttonChoose_Click(object sender, EventArgs e)
         {
 
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormEmployeeTrainingCourse_Load(object sender, EventArgs e)
         {
 
         }

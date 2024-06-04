@@ -69,5 +69,15 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void TrainingCourseCompletingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CertificatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

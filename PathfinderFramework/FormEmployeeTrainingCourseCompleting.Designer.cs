@@ -1,6 +1,6 @@
 ﻿namespace PathfinderFramework
 {
-    partial class FormEmployeeTrainingCourse
+    partial class FormEmployeeTrainingCourseCompleting
     {
         /// <summary>
         /// Required designer variable.
@@ -34,12 +34,11 @@
             this.textBoxTrainingCourseName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBoxIsCourseCompleted = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonChooseCertitfaceImagePath = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxDocumentCode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +55,7 @@
             this.textBoxEmployeeFullName.Location = new System.Drawing.Point(147, 6);
             this.textBoxEmployeeFullName.Name = "textBoxEmployeeFullName";
             this.textBoxEmployeeFullName.ReadOnly = true;
-            this.textBoxEmployeeFullName.Size = new System.Drawing.Size(152, 20);
+            this.textBoxEmployeeFullName.Size = new System.Drawing.Size(203, 20);
             this.textBoxEmployeeFullName.TabIndex = 1;
             // 
             // label2
@@ -73,7 +72,7 @@
             this.textBoxTrainingCourseName.Location = new System.Drawing.Point(147, 32);
             this.textBoxTrainingCourseName.Name = "textBoxTrainingCourseName";
             this.textBoxTrainingCourseName.ReadOnly = true;
-            this.textBoxTrainingCourseName.Size = new System.Drawing.Size(152, 20);
+            this.textBoxTrainingCourseName.Size = new System.Drawing.Size(203, 20);
             this.textBoxTrainingCourseName.TabIndex = 1;
             // 
             // label3
@@ -94,28 +93,9 @@
             this.checkBoxIsCourseCompleted.TabIndex = 2;
             this.checkBoxIsCourseCompleted.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 147);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 189);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // buttonChooseCertitfaceImagePath
-            // 
-            this.buttonChooseCertitfaceImagePath.Location = new System.Drawing.Point(96, 89);
-            this.buttonChooseCertitfaceImagePath.Name = "buttonChooseCertitfaceImagePath";
-            this.buttonChooseCertitfaceImagePath.Size = new System.Drawing.Size(127, 52);
-            this.buttonChooseCertitfaceImagePath.TabIndex = 4;
-            this.buttonChooseCertitfaceImagePath.Text = "Выбрать фото сертификата";
-            this.buttonChooseCertitfaceImagePath.UseVisualStyleBackColor = true;
-            this.buttonChooseCertitfaceImagePath.Click += new System.EventHandler(this.buttonChooseCertitfaceImagePath_Click);
-            // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(202, 342);
+            this.buttonSave.Location = new System.Drawing.Point(275, 103);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 5;
@@ -125,7 +105,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(121, 342);
+            this.buttonCancel.Location = new System.Drawing.Point(194, 103);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 5;
@@ -137,25 +117,40 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // FormEmployeeTrainingCourse
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Код документа";
+            // 
+            // textBoxDocumentCode
+            // 
+            this.textBoxDocumentCode.Location = new System.Drawing.Point(147, 77);
+            this.textBoxDocumentCode.Name = "textBoxDocumentCode";
+            this.textBoxDocumentCode.Size = new System.Drawing.Size(203, 20);
+            this.textBoxDocumentCode.TabIndex = 1;
+            // 
+            // FormEmployeeTrainingCourseCompleting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 372);
+            this.ClientSize = new System.Drawing.Size(362, 140);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.buttonChooseCertitfaceImagePath);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBoxIsCourseCompleted);
+            this.Controls.Add(this.textBoxDocumentCode);
             this.Controls.Add(this.textBoxTrainingCourseName);
             this.Controls.Add(this.textBoxEmployeeFullName);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormEmployeeTrainingCourse";
-            this.Text = "Курс сотрудника";
+            this.Name = "FormEmployeeTrainingCourseCompleting";
+            this.Text = "Прохождение курса сотрудника";
             this.Load += new System.EventHandler(this.FormEmployeeTrainingCourse_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,10 +164,10 @@
         private System.Windows.Forms.TextBox textBoxTrainingCourseName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBoxIsCourseCompleted;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonChooseCertitfaceImagePath;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxDocumentCode;
     }
 }
