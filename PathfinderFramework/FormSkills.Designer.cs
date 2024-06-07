@@ -35,8 +35,10 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.buttonFilter = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
+            this.textBoxFilterName = new System.Windows.Forms.TextBox();
+            this.buttonClearFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(240, 426);
@@ -54,7 +56,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(258, 38);
+            this.buttonAdd.Location = new System.Drawing.Point(262, 96);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(104, 52);
             this.buttonAdd.TabIndex = 1;
@@ -64,7 +66,7 @@
             // 
             // buttonChange
             // 
-            this.buttonChange.Location = new System.Drawing.Point(258, 96);
+            this.buttonChange.Location = new System.Drawing.Point(262, 154);
             this.buttonChange.Name = "buttonChange";
             this.buttonChange.Size = new System.Drawing.Size(104, 52);
             this.buttonChange.TabIndex = 1;
@@ -74,7 +76,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(258, 154);
+            this.buttonDelete.Location = new System.Drawing.Point(262, 212);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(104, 52);
             this.buttonDelete.TabIndex = 1;
@@ -84,7 +86,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(258, 212);
+            this.buttonUpdate.Location = new System.Drawing.Point(262, 270);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(104, 52);
             this.buttonUpdate.TabIndex = 1;
@@ -95,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(257, 15);
+            this.label1.Location = new System.Drawing.Point(261, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 2;
@@ -103,36 +105,55 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(320, 12);
+            this.textBoxName.Location = new System.Drawing.Point(324, 70);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 3;
             // 
+            // buttonFilter
+            // 
+            this.buttonFilter.Location = new System.Drawing.Point(177, 38);
+            this.buttonFilter.Name = "buttonFilter";
+            this.buttonFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonFilter.TabIndex = 4;
+            this.buttonFilter.Text = "Фильтр";
+            this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(258, 285);
+            this.label2.Location = new System.Drawing.Point(12, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Время затраченное на запрос:";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Название";
             // 
-            // textBoxTime
+            // textBoxFilterName
             // 
-            this.textBoxTime.Location = new System.Drawing.Point(260, 301);
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(335, 20);
-            this.textBoxTime.TabIndex = 5;
+            this.textBoxFilterName.Location = new System.Drawing.Point(75, 12);
+            this.textBoxFilterName.Name = "textBoxFilterName";
+            this.textBoxFilterName.Size = new System.Drawing.Size(177, 20);
+            this.textBoxFilterName.TabIndex = 6;
+            // 
+            // buttonClearFilter
+            // 
+            this.buttonClearFilter.Location = new System.Drawing.Point(61, 38);
+            this.buttonClearFilter.Name = "buttonClearFilter";
+            this.buttonClearFilter.Size = new System.Drawing.Size(110, 23);
+            this.buttonClearFilter.TabIndex = 7;
+            this.buttonClearFilter.Text = "Очистить фильтр";
+            this.buttonClearFilter.UseVisualStyleBackColor = true;
             // 
             // FormSkills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 450);
-            this.Controls.Add(this.textBoxTime);
+            this.ClientSize = new System.Drawing.Size(436, 505);
+            this.Controls.Add(this.buttonClearFilter);
+            this.Controls.Add(this.textBoxFilterName);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonUpdate);
@@ -158,7 +179,9 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxTime;
+        private System.Windows.Forms.TextBox textBoxFilterName;
+        private System.Windows.Forms.Button buttonClearFilter;
     }
 }

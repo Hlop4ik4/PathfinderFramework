@@ -68,5 +68,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void buttonEmployeeTrainingCoursesView_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

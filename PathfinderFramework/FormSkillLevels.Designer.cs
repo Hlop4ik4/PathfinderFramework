@@ -33,6 +33,10 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonChange = new System.Windows.Forms.Button();
+            this.buttonFilter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxSkillName = new System.Windows.Forms.TextBox();
+            this.buttonClearFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,15 +45,15 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(319, 426);
             this.dataGridView1.TabIndex = 0;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(258, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(337, 67);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(91, 50);
             this.buttonAdd.TabIndex = 1;
@@ -59,7 +63,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(258, 124);
+            this.buttonDelete.Location = new System.Drawing.Point(337, 179);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(91, 49);
             this.buttonDelete.TabIndex = 1;
@@ -69,7 +73,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(258, 179);
+            this.buttonUpdate.Location = new System.Drawing.Point(337, 234);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(91, 49);
             this.buttonUpdate.TabIndex = 1;
@@ -79,7 +83,7 @@
             // 
             // buttonChange
             // 
-            this.buttonChange.Location = new System.Drawing.Point(258, 68);
+            this.buttonChange.Location = new System.Drawing.Point(337, 123);
             this.buttonChange.Name = "buttonChange";
             this.buttonChange.Size = new System.Drawing.Size(91, 50);
             this.buttonChange.TabIndex = 1;
@@ -87,11 +91,51 @@
             this.buttonChange.UseVisualStyleBackColor = true;
             this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
             // 
+            // buttonFilter
+            // 
+            this.buttonFilter.Location = new System.Drawing.Point(196, 38);
+            this.buttonFilter.Name = "buttonFilter";
+            this.buttonFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonFilter.TabIndex = 2;
+            this.buttonFilter.Text = "Фильтр";
+            this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Название навыка";
+            // 
+            // textBoxSkillName
+            // 
+            this.textBoxSkillName.Location = new System.Drawing.Point(116, 12);
+            this.textBoxSkillName.Name = "textBoxSkillName";
+            this.textBoxSkillName.Size = new System.Drawing.Size(155, 20);
+            this.textBoxSkillName.TabIndex = 4;
+            // 
+            // buttonClearFilter
+            // 
+            this.buttonClearFilter.Location = new System.Drawing.Point(80, 38);
+            this.buttonClearFilter.Name = "buttonClearFilter";
+            this.buttonClearFilter.Size = new System.Drawing.Size(110, 23);
+            this.buttonClearFilter.TabIndex = 8;
+            this.buttonClearFilter.Text = "Очистить фильтр";
+            this.buttonClearFilter.UseVisualStyleBackColor = true;
+            this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
+            // 
             // FormSkillLevels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 450);
+            this.ClientSize = new System.Drawing.Size(435, 506);
+            this.Controls.Add(this.buttonClearFilter);
+            this.Controls.Add(this.textBoxSkillName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.buttonChange);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonDelete);
@@ -102,6 +146,7 @@
             this.Load += new System.EventHandler(this.FormSkillLevels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,5 +157,9 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonChange;
+        private System.Windows.Forms.Button buttonFilter;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxSkillName;
+        private System.Windows.Forms.Button buttonClearFilter;
     }
 }

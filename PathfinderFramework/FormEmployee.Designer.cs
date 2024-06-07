@@ -57,6 +57,7 @@
             this.textBoxExperience = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxPosition = new System.Windows.Forms.ComboBox();
+            this.buttonEmployeeTrainingCoursesView = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSkills)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -336,11 +337,22 @@
             this.comboBoxPosition.Size = new System.Drawing.Size(200, 21);
             this.comboBoxPosition.TabIndex = 10;
             // 
+            // buttonEmployeeTrainingCoursesView
+            // 
+            this.buttonEmployeeTrainingCoursesView.Location = new System.Drawing.Point(352, 48);
+            this.buttonEmployeeTrainingCoursesView.Name = "buttonEmployeeTrainingCoursesView";
+            this.buttonEmployeeTrainingCoursesView.Size = new System.Drawing.Size(96, 47);
+            this.buttonEmployeeTrainingCoursesView.TabIndex = 12;
+            this.buttonEmployeeTrainingCoursesView.Text = "Просмотр курсов сотрудника";
+            this.buttonEmployeeTrainingCoursesView.UseVisualStyleBackColor = true;
+            this.buttonEmployeeTrainingCoursesView.Click += new System.EventHandler(this.buttonEmployeeTrainingCoursesView_Click);
+            // 
             // FormEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 596);
+            this.Controls.Add(this.buttonEmployeeTrainingCoursesView);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBoxPosition);
             this.Controls.Add(this.comboBoxGender);
@@ -399,5 +411,6 @@
         private System.Windows.Forms.TextBox textBoxExperience;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBoxPosition;
+        private System.Windows.Forms.Button buttonEmployeeTrainingCoursesView;
     }
 }
