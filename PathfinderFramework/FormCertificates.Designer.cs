@@ -33,6 +33,12 @@
             this.buttonChange = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonFilter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxCode = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxEmployeeFullName = new System.Windows.Forms.TextBox();
+            this.buttonClearFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,15 +47,15 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 93);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(413, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(413, 345);
             this.dataGridView1.TabIndex = 0;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(431, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(431, 93);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 1;
@@ -59,7 +65,7 @@
             // 
             // buttonChange
             // 
-            this.buttonChange.Location = new System.Drawing.Point(431, 41);
+            this.buttonChange.Location = new System.Drawing.Point(431, 122);
             this.buttonChange.Name = "buttonChange";
             this.buttonChange.Size = new System.Drawing.Size(75, 23);
             this.buttonChange.TabIndex = 1;
@@ -69,7 +75,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(431, 70);
+            this.buttonDelete.Location = new System.Drawing.Point(431, 151);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 1;
@@ -79,7 +85,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(431, 99);
+            this.buttonUpdate.Location = new System.Drawing.Point(431, 180);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 1;
@@ -87,11 +93,69 @@
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
+            // buttonFilter
+            // 
+            this.buttonFilter.Location = new System.Drawing.Point(258, 64);
+            this.buttonFilter.Name = "buttonFilter";
+            this.buttonFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonFilter.TabIndex = 2;
+            this.buttonFilter.Text = "Фильтр";
+            this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(76, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Код";
+            // 
+            // textBoxCode
+            // 
+            this.textBoxCode.Location = new System.Drawing.Point(108, 12);
+            this.textBoxCode.Name = "textBoxCode";
+            this.textBoxCode.Size = new System.Drawing.Size(225, 20);
+            this.textBoxCode.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Имя сотрудника";
+            // 
+            // textBoxEmployeeFullName
+            // 
+            this.textBoxEmployeeFullName.Location = new System.Drawing.Point(108, 38);
+            this.textBoxEmployeeFullName.Name = "textBoxEmployeeFullName";
+            this.textBoxEmployeeFullName.Size = new System.Drawing.Size(225, 20);
+            this.textBoxEmployeeFullName.TabIndex = 4;
+            // 
+            // buttonClearFilter
+            // 
+            this.buttonClearFilter.Location = new System.Drawing.Point(132, 64);
+            this.buttonClearFilter.Name = "buttonClearFilter";
+            this.buttonClearFilter.Size = new System.Drawing.Size(120, 23);
+            this.buttonClearFilter.TabIndex = 2;
+            this.buttonClearFilter.Text = "Очистить фильтр";
+            this.buttonClearFilter.UseVisualStyleBackColor = true;
+            this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
+            // 
             // FormCertificates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 450);
+            this.Controls.Add(this.textBoxEmployeeFullName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxCode);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonClearFilter);
+            this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonChange);
@@ -102,6 +166,7 @@
             this.Load += new System.EventHandler(this.FormCertificates_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,5 +177,11 @@
         private System.Windows.Forms.Button buttonChange;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonFilter;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxCode;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxEmployeeFullName;
+        private System.Windows.Forms.Button buttonClearFilter;
     }
 }

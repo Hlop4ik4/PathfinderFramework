@@ -22,12 +22,32 @@ namespace PathfinderFramework
 
         }
 
-        private void buttonChoose_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonCancel_Click(object sender, EventArgs e)
+        private void buttonChooseEmployees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDeleteSelectedEmployees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClearFilter_Click(object sender, EventArgs e)
         {
 
         }

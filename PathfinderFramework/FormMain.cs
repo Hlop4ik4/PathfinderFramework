@@ -84,5 +84,25 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void buttonEmployeeFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClearEmployeeFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPositionFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClearPositionFilter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

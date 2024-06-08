@@ -144,6 +144,7 @@
             this.buttonClearFilter.TabIndex = 7;
             this.buttonClearFilter.Text = "Очистить фильтр";
             this.buttonClearFilter.UseVisualStyleBackColor = true;
+            this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
             // 
             // FormSkills
             // 

@@ -57,5 +57,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void buttonClearFilter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
