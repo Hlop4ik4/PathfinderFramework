@@ -22,12 +22,12 @@ namespace PathfinderFramework
 
         }
 
-        private void buttonCreateReport_Click(object sender, EventArgs e)
+        private void FormCourseReport_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FormCourseReport_Load(object sender, EventArgs e)
+        private void buttonCreateDoc_Click(object sender, EventArgs e)
         {
 
         }

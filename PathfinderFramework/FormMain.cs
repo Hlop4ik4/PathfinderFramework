@@ -129,5 +129,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void PositionChangeReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

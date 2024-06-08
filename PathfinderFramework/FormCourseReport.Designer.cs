@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonCreateReport = new System.Windows.Forms.Button();
+            this.buttonCreateDoc = new System.Windows.Forms.Button();
             this.textBoxLocation = new System.Windows.Forms.TextBox();
             this.textBoxOrganizer = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxBeginDate = new System.Windows.Forms.TextBox();
             this.textBoxEndDate = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -74,15 +75,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Курс";
             // 
-            // buttonCreateReport
+            // buttonCreateDoc
             // 
-            this.buttonCreateReport.Location = new System.Drawing.Point(241, 10);
-            this.buttonCreateReport.Name = "buttonCreateReport";
-            this.buttonCreateReport.Size = new System.Drawing.Size(148, 23);
-            this.buttonCreateReport.TabIndex = 2;
-            this.buttonCreateReport.Text = "Сформировать отчет";
-            this.buttonCreateReport.UseVisualStyleBackColor = true;
-            this.buttonCreateReport.Click += new System.EventHandler(this.buttonCreateReport_Click);
+            this.buttonCreateDoc.Location = new System.Drawing.Point(241, 10);
+            this.buttonCreateDoc.Name = "buttonCreateDoc";
+            this.buttonCreateDoc.Size = new System.Drawing.Size(148, 23);
+            this.buttonCreateDoc.TabIndex = 2;
+            this.buttonCreateDoc.Text = "Создать документ";
+            this.buttonCreateDoc.UseVisualStyleBackColor = true;
+            this.buttonCreateDoc.Click += new System.EventHandler(this.buttonCreateDoc_Click);
             // 
             // textBoxLocation
             // 
@@ -377,7 +378,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.buttonCreateReport);
+            this.Controls.Add(this.buttonCreateDoc);
             this.Controls.Add(this.label1);
             this.Name = "FormCourseReport";
             this.Text = "Отчет по курсу";
@@ -392,7 +393,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonCreateReport;
+        private System.Windows.Forms.Button buttonCreateDoc;
         private System.Windows.Forms.TextBox textBoxLocation;
         private System.Windows.Forms.TextBox textBoxOrganizer;
         private System.Windows.Forms.Label label8;
@@ -424,5 +425,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBoxBeginDate;
         private System.Windows.Forms.TextBox textBoxEndDate;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
