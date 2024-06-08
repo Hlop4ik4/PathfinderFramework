@@ -55,6 +55,9 @@
             this.buttonClearPositionFilter = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPositionName = new System.Windows.Forms.TextBox();
+            this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CourseReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EmployeeReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
@@ -67,7 +70,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.справочникиToolStripMenuItem,
             this.прохождениеКурсовToolStripMenuItem,
-            this.документыToolStripMenuItem});
+            this.документыToolStripMenuItem,
+            this.отчетыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(853, 24);
@@ -307,6 +311,29 @@
             this.textBoxPositionName.Size = new System.Drawing.Size(272, 20);
             this.textBoxPositionName.TabIndex = 3;
             // 
+            // отчетыToolStripMenuItem
+            // 
+            this.отчетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CourseReportToolStripMenuItem,
+            this.EmployeeReportToolStripMenuItem});
+            this.отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
+            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.отчетыToolStripMenuItem.Text = "Отчеты";
+            // 
+            // CourseReportToolStripMenuItem
+            // 
+            this.CourseReportToolStripMenuItem.Name = "CourseReportToolStripMenuItem";
+            this.CourseReportToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.CourseReportToolStripMenuItem.Text = "Отчет по курсу";
+            this.CourseReportToolStripMenuItem.Click += new System.EventHandler(this.CourseReportToolStripMenuItem_Click);
+            // 
+            // EmployeeReportToolStripMenuItem
+            // 
+            this.EmployeeReportToolStripMenuItem.Name = "EmployeeReportToolStripMenuItem";
+            this.EmployeeReportToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.EmployeeReportToolStripMenuItem.Text = "Отчет по сотруднику";
+            this.EmployeeReportToolStripMenuItem.Click += new System.EventHandler(this.EmployeeReportToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,5 +388,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonClearPositionFilter;
         private System.Windows.Forms.Button buttonPositionFilter;
+        private System.Windows.Forms.ToolStripMenuItem отчетыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CourseReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EmployeeReportToolStripMenuItem;
     }
 }

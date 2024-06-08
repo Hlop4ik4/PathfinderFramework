@@ -58,6 +58,12 @@
     <Compile Include="FormCertificates.Designer.cs">
       <DependentUpon>FormCertificates.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCourseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCourseReport.Designer.cs">
+      <DependentUpon>FormCourseReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="FormEmployeeDepartments.Designer.cs">
       <DependentUpon>FormEmployeeDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeReport.Designer.cs">
+      <DependentUpon>FormEmployeeReport.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEmployees.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,18 @@
     <Compile Include="FormProfessions.Designer.cs">
       <DependentUpon>FormProfessions.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReportEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportEmployees.Designer.cs">
+      <DependentUpon>FormReportEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportTrainingCourseCompletings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportTrainingCourseCompletings.Designer.cs">
+      <DependentUpon>FormReportTrainingCourseCompletings.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSkillLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +246,9 @@
     <EmbeddedResource Include="FormCertificates.resx">
       <DependentUpon>FormCertificates.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCourseReport.resx">
+      <DependentUpon>FormCourseReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDepartment.resx">
       <DependentUpon>FormDepartment.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmployeeDepartments.resx">
       <DependentUpon>FormEmployeeDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeReport.resx">
+      <DependentUpon>FormEmployeeReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmployees.resx">
       <DependentUpon>FormEmployees.cs</DependentUpon>
@@ -275,6 +305,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfessions.resx">
       <DependentUpon>FormProfessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportEmployees.resx">
+      <DependentUpon>FormReportEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportTrainingCourseCompletings.resx">
+      <DependentUpon>FormReportTrainingCourseCompletings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSkillLevel.resx">
       <DependentUpon>FormSkillLevel.cs</DependentUpon>

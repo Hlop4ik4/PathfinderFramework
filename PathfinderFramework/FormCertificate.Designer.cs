@@ -40,6 +40,8 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxDate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +108,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 192);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(206, 251);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +117,7 @@
             // 
             // buttonChooseCertificateImagePath
             // 
-            this.buttonChooseCertificateImagePath.Location = new System.Drawing.Point(109, 86);
+            this.buttonChooseCertificateImagePath.Location = new System.Drawing.Point(121, 112);
             this.buttonChooseCertificateImagePath.Name = "buttonChooseCertificateImagePath";
             this.buttonChooseCertificateImagePath.Size = new System.Drawing.Size(120, 74);
             this.buttonChooseCertificateImagePath.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(190, 423);
+            this.buttonSave.Location = new System.Drawing.Point(202, 449);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 8;
@@ -135,7 +137,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(109, 423);
+            this.buttonCancel.Location = new System.Drawing.Point(121, 449);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 8;
@@ -147,16 +149,35 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(93, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Дата";
+            // 
+            // textBoxDate
+            // 
+            this.textBoxDate.Location = new System.Drawing.Point(132, 86);
+            this.textBoxDate.Name = "textBoxDate";
+            this.textBoxDate.ReadOnly = true;
+            this.textBoxDate.Size = new System.Drawing.Size(201, 20);
+            this.textBoxDate.TabIndex = 5;
+            // 
             // FormCertificate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 456);
+            this.ClientSize = new System.Drawing.Size(346, 481);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonChooseCertificateImagePath);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBoxDate);
             this.Controls.Add(this.textBoxCode);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxEmployee);
@@ -186,5 +207,7 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxDate;
     }
 }

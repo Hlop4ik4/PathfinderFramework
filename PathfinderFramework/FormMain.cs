@@ -104,5 +104,15 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void CourseReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmployeeReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
