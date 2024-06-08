@@ -114,5 +114,20 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void CertificatesReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CoursesReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SkillLevelsReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

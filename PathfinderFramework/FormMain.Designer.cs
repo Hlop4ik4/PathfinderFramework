@@ -42,22 +42,25 @@
             this.CertificatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.документыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.positionChangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
-            this.buttonCalc = new System.Windows.Forms.Button();
-            this.buttonEmployeeFilter = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxEmployeeName = new System.Windows.Forms.TextBox();
-            this.buttonClearEmployeeFilter = new System.Windows.Forms.Button();
-            this.buttonPositionFilter = new System.Windows.Forms.Button();
-            this.buttonClearPositionFilter = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxPositionName = new System.Windows.Forms.TextBox();
             this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CourseReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EmployeeReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CertificatesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CoursesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxEmployeeName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonClearEmployeeFilter = new System.Windows.Forms.Button();
+            this.buttonEmployeeFilter = new System.Windows.Forms.Button();
+            this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxPositionName = new System.Windows.Forms.TextBox();
+            this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonClearPositionFilter = new System.Windows.Forms.Button();
+            this.buttonPositionFilter = new System.Windows.Forms.Button();
+            this.buttonCalc = new System.Windows.Forms.Button();
+            this.SkillLevelsReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
@@ -179,6 +182,46 @@
             this.positionChangesToolStripMenuItem.Text = "Документы о смене должности";
             this.positionChangesToolStripMenuItem.Click += new System.EventHandler(this.positionChangesToolStripMenuItem_Click);
             // 
+            // отчетыToolStripMenuItem
+            // 
+            this.отчетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CourseReportToolStripMenuItem,
+            this.EmployeeReportToolStripMenuItem,
+            this.CertificatesReportToolStripMenuItem,
+            this.CoursesReportToolStripMenuItem,
+            this.SkillLevelsReportToolStripMenuItem});
+            this.отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
+            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.отчетыToolStripMenuItem.Text = "Отчеты";
+            // 
+            // CourseReportToolStripMenuItem
+            // 
+            this.CourseReportToolStripMenuItem.Name = "CourseReportToolStripMenuItem";
+            this.CourseReportToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.CourseReportToolStripMenuItem.Text = "Отчет по курсу";
+            this.CourseReportToolStripMenuItem.Click += new System.EventHandler(this.CourseReportToolStripMenuItem_Click);
+            // 
+            // EmployeeReportToolStripMenuItem
+            // 
+            this.EmployeeReportToolStripMenuItem.Name = "EmployeeReportToolStripMenuItem";
+            this.EmployeeReportToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.EmployeeReportToolStripMenuItem.Text = "Отчет по сотруднику";
+            this.EmployeeReportToolStripMenuItem.Click += new System.EventHandler(this.EmployeeReportToolStripMenuItem_Click);
+            // 
+            // CertificatesReportToolStripMenuItem
+            // 
+            this.CertificatesReportToolStripMenuItem.Name = "CertificatesReportToolStripMenuItem";
+            this.CertificatesReportToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.CertificatesReportToolStripMenuItem.Text = "Отчет по сертификатам";
+            this.CertificatesReportToolStripMenuItem.Click += new System.EventHandler(this.CertificatesReportToolStripMenuItem_Click);
+            // 
+            // CoursesReportToolStripMenuItem
+            // 
+            this.CoursesReportToolStripMenuItem.Name = "CoursesReportToolStripMenuItem";
+            this.CoursesReportToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.CoursesReportToolStripMenuItem.Text = "Отчет по курсам";
+            this.CoursesReportToolStripMenuItem.Click += new System.EventHandler(this.CoursesReportToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBoxEmployeeName);
@@ -192,6 +235,42 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Сотрудники";
+            // 
+            // textBoxEmployeeName
+            // 
+            this.textBoxEmployeeName.Location = new System.Drawing.Point(41, 19);
+            this.textBoxEmployeeName.Name = "textBoxEmployeeName";
+            this.textBoxEmployeeName.Size = new System.Drawing.Size(272, 20);
+            this.textBoxEmployeeName.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Имя";
+            // 
+            // buttonClearEmployeeFilter
+            // 
+            this.buttonClearEmployeeFilter.Location = new System.Drawing.Point(113, 45);
+            this.buttonClearEmployeeFilter.Name = "buttonClearEmployeeFilter";
+            this.buttonClearEmployeeFilter.Size = new System.Drawing.Size(119, 23);
+            this.buttonClearEmployeeFilter.TabIndex = 1;
+            this.buttonClearEmployeeFilter.Text = "Очистить фильтр";
+            this.buttonClearEmployeeFilter.UseVisualStyleBackColor = true;
+            this.buttonClearEmployeeFilter.Click += new System.EventHandler(this.buttonClearEmployeeFilter_Click);
+            // 
+            // buttonEmployeeFilter
+            // 
+            this.buttonEmployeeFilter.Location = new System.Drawing.Point(238, 45);
+            this.buttonEmployeeFilter.Name = "buttonEmployeeFilter";
+            this.buttonEmployeeFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonEmployeeFilter.TabIndex = 1;
+            this.buttonEmployeeFilter.Text = "Фильтр";
+            this.buttonEmployeeFilter.UseVisualStyleBackColor = true;
+            this.buttonEmployeeFilter.Click += new System.EventHandler(this.buttonEmployeeFilter_Click);
             // 
             // dataGridViewEmployees
             // 
@@ -218,6 +297,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Должности";
             // 
+            // textBoxPositionName
+            // 
+            this.textBoxPositionName.Location = new System.Drawing.Point(41, 23);
+            this.textBoxPositionName.Name = "textBoxPositionName";
+            this.textBoxPositionName.Size = new System.Drawing.Size(272, 20);
+            this.textBoxPositionName.TabIndex = 3;
+            // 
             // dataGridViewPositions
             // 
             this.dataGridViewPositions.AllowUserToAddRows = false;
@@ -229,61 +315,14 @@
             this.dataGridViewPositions.Size = new System.Drawing.Size(307, 309);
             this.dataGridViewPositions.TabIndex = 0;
             // 
-            // buttonCalc
+            // label2
             // 
-            this.buttonCalc.Location = new System.Drawing.Point(337, 45);
-            this.buttonCalc.Name = "buttonCalc";
-            this.buttonCalc.Size = new System.Drawing.Size(179, 23);
-            this.buttonCalc.TabIndex = 3;
-            this.buttonCalc.Text = "Рассчитать разность";
-            this.buttonCalc.UseVisualStyleBackColor = true;
-            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
-            // 
-            // buttonEmployeeFilter
-            // 
-            this.buttonEmployeeFilter.Location = new System.Drawing.Point(238, 45);
-            this.buttonEmployeeFilter.Name = "buttonEmployeeFilter";
-            this.buttonEmployeeFilter.Size = new System.Drawing.Size(75, 23);
-            this.buttonEmployeeFilter.TabIndex = 1;
-            this.buttonEmployeeFilter.Text = "Фильтр";
-            this.buttonEmployeeFilter.UseVisualStyleBackColor = true;
-            this.buttonEmployeeFilter.Click += new System.EventHandler(this.buttonEmployeeFilter_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Имя";
-            // 
-            // textBoxEmployeeName
-            // 
-            this.textBoxEmployeeName.Location = new System.Drawing.Point(41, 19);
-            this.textBoxEmployeeName.Name = "textBoxEmployeeName";
-            this.textBoxEmployeeName.Size = new System.Drawing.Size(272, 20);
-            this.textBoxEmployeeName.TabIndex = 3;
-            // 
-            // buttonClearEmployeeFilter
-            // 
-            this.buttonClearEmployeeFilter.Location = new System.Drawing.Point(113, 45);
-            this.buttonClearEmployeeFilter.Name = "buttonClearEmployeeFilter";
-            this.buttonClearEmployeeFilter.Size = new System.Drawing.Size(119, 23);
-            this.buttonClearEmployeeFilter.TabIndex = 1;
-            this.buttonClearEmployeeFilter.Text = "Очистить фильтр";
-            this.buttonClearEmployeeFilter.UseVisualStyleBackColor = true;
-            this.buttonClearEmployeeFilter.Click += new System.EventHandler(this.buttonClearEmployeeFilter_Click);
-            // 
-            // buttonPositionFilter
-            // 
-            this.buttonPositionFilter.Location = new System.Drawing.Point(238, 49);
-            this.buttonPositionFilter.Name = "buttonPositionFilter";
-            this.buttonPositionFilter.Size = new System.Drawing.Size(75, 23);
-            this.buttonPositionFilter.TabIndex = 1;
-            this.buttonPositionFilter.Text = "Фильтр";
-            this.buttonPositionFilter.UseVisualStyleBackColor = true;
-            this.buttonPositionFilter.Click += new System.EventHandler(this.buttonPositionFilter_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Имя";
             // 
             // buttonClearPositionFilter
             // 
@@ -295,44 +334,32 @@
             this.buttonClearPositionFilter.UseVisualStyleBackColor = true;
             this.buttonClearPositionFilter.Click += new System.EventHandler(this.buttonClearPositionFilter_Click);
             // 
-            // label2
+            // buttonPositionFilter
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Имя";
+            this.buttonPositionFilter.Location = new System.Drawing.Point(238, 49);
+            this.buttonPositionFilter.Name = "buttonPositionFilter";
+            this.buttonPositionFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonPositionFilter.TabIndex = 1;
+            this.buttonPositionFilter.Text = "Фильтр";
+            this.buttonPositionFilter.UseVisualStyleBackColor = true;
+            this.buttonPositionFilter.Click += new System.EventHandler(this.buttonPositionFilter_Click);
             // 
-            // textBoxPositionName
+            // buttonCalc
             // 
-            this.textBoxPositionName.Location = new System.Drawing.Point(41, 23);
-            this.textBoxPositionName.Name = "textBoxPositionName";
-            this.textBoxPositionName.Size = new System.Drawing.Size(272, 20);
-            this.textBoxPositionName.TabIndex = 3;
+            this.buttonCalc.Location = new System.Drawing.Point(337, 45);
+            this.buttonCalc.Name = "buttonCalc";
+            this.buttonCalc.Size = new System.Drawing.Size(179, 23);
+            this.buttonCalc.TabIndex = 3;
+            this.buttonCalc.Text = "Рассчитать разность";
+            this.buttonCalc.UseVisualStyleBackColor = true;
+            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
-            // отчетыToolStripMenuItem
+            // SkillLevelsReportToolStripMenuItem
             // 
-            this.отчетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CourseReportToolStripMenuItem,
-            this.EmployeeReportToolStripMenuItem});
-            this.отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
-            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.отчетыToolStripMenuItem.Text = "Отчеты";
-            // 
-            // CourseReportToolStripMenuItem
-            // 
-            this.CourseReportToolStripMenuItem.Name = "CourseReportToolStripMenuItem";
-            this.CourseReportToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.CourseReportToolStripMenuItem.Text = "Отчет по курсу";
-            this.CourseReportToolStripMenuItem.Click += new System.EventHandler(this.CourseReportToolStripMenuItem_Click);
-            // 
-            // EmployeeReportToolStripMenuItem
-            // 
-            this.EmployeeReportToolStripMenuItem.Name = "EmployeeReportToolStripMenuItem";
-            this.EmployeeReportToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.EmployeeReportToolStripMenuItem.Text = "Отчет по сотруднику";
-            this.EmployeeReportToolStripMenuItem.Click += new System.EventHandler(this.EmployeeReportToolStripMenuItem_Click);
+            this.SkillLevelsReportToolStripMenuItem.Name = "SkillLevelsReportToolStripMenuItem";
+            this.SkillLevelsReportToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.SkillLevelsReportToolStripMenuItem.Text = "Отчет по навыкам";
+            this.SkillLevelsReportToolStripMenuItem.Click += new System.EventHandler(this.SkillLevelsReportToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -391,5 +418,8 @@
         private System.Windows.Forms.ToolStripMenuItem отчетыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CourseReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EmployeeReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CertificatesReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CoursesReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SkillLevelsReportToolStripMenuItem;
     }
 }
