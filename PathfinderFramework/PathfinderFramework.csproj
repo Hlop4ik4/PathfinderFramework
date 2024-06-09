@@ -124,6 +124,12 @@
     <Compile Include="FormEmployeeTrainingCourses.Designer.cs">
       <DependentUpon>FormEmployeeTrainingCourses.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLoadFromFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadFromFile.Designer.cs">
+      <DependentUpon>FormLoadFromFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     </Compile>
     <Compile Include="FormReportTrainingCourseCompletings.Designer.cs">
       <DependentUpon>FormReportTrainingCourseCompletings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaveToFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveToFile.Designer.cs">
+      <DependentUpon>FormSaveToFile.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSkillLevel.cs">
       <SubType>Form</SubType>
@@ -303,6 +315,9 @@
     <EmbeddedResource Include="FormEmployeeTrainingCourses.resx">
       <DependentUpon>FormEmployeeTrainingCourses.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadFromFile.resx">
+      <DependentUpon>FormLoadFromFile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportTrainingCourseCompletings.resx">
       <DependentUpon>FormReportTrainingCourseCompletings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveToFile.resx">
+      <DependentUpon>FormSaveToFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSkillLevel.resx">
       <DependentUpon>FormSkillLevel.cs</DependentUpon>

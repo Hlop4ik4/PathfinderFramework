@@ -47,26 +47,29 @@
             this.EmployeeReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CertificatesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CoursesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SkillLevelsReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PositionChangeReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxEmployeeName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonClearEmployeeFilter = new System.Windows.Forms.Button();
             this.buttonEmployeeFilter = new System.Windows.Forms.Button();
-            dataGridViewEmployees = new System.Windows.Forms.DataGridView();
+            this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxPositionName = new System.Windows.Forms.TextBox();
-            dataGridViewPositions = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPositions = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonClearPositionFilter = new System.Windows.Forms.Button();
             this.buttonPositionFilter = new System.Windows.Forms.Button();
             this.buttonCalc = new System.Windows.Forms.Button();
-            this.SkillLevelsReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PositionChangeReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.администрированиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveDataToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoadDataFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(dataGridViewEmployees)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(dataGridViewPositions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPositions)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -75,7 +78,8 @@
             this.справочникиToolStripMenuItem,
             this.прохождениеКурсовToolStripMenuItem,
             this.документыToolStripMenuItem,
-            this.отчетыToolStripMenuItem});
+            this.отчетыToolStripMenuItem,
+            this.администрированиеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(853, 24);
@@ -224,13 +228,27 @@
             this.CoursesReportToolStripMenuItem.Text = "Отчет по курсам";
             this.CoursesReportToolStripMenuItem.Click += new System.EventHandler(this.CoursesReportToolStripMenuItem_Click);
             // 
+            // SkillLevelsReportToolStripMenuItem
+            // 
+            this.SkillLevelsReportToolStripMenuItem.Name = "SkillLevelsReportToolStripMenuItem";
+            this.SkillLevelsReportToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.SkillLevelsReportToolStripMenuItem.Text = "Отчет по навыкам";
+            this.SkillLevelsReportToolStripMenuItem.Click += new System.EventHandler(this.SkillLevelsReportToolStripMenuItem_Click);
+            // 
+            // PositionChangeReportToolStripMenuItem
+            // 
+            this.PositionChangeReportToolStripMenuItem.Name = "PositionChangeReportToolStripMenuItem";
+            this.PositionChangeReportToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.PositionChangeReportToolStripMenuItem.Text = "Отчет по сменам должности";
+            this.PositionChangeReportToolStripMenuItem.Click += new System.EventHandler(this.PositionChangeReportToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBoxEmployeeName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.buttonClearEmployeeFilter);
             this.groupBox1.Controls.Add(this.buttonEmployeeFilter);
-            this.groupBox1.Controls.Add(dataGridViewEmployees);
+            this.groupBox1.Controls.Add(this.dataGridViewEmployees);
             this.groupBox1.Location = new System.Drawing.Point(12, 45);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(319, 393);
@@ -276,19 +294,19 @@
             // 
             // dataGridViewEmployees
             // 
-            dataGridViewEmployees.AllowUserToAddRows = false;
-            dataGridViewEmployees.AllowUserToDeleteRows = false;
-            dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEmployees.Location = new System.Drawing.Point(6, 74);
-            dataGridViewEmployees.Name = "dataGridViewEmployees";
-            dataGridViewEmployees.ReadOnly = true;
-            dataGridViewEmployees.Size = new System.Drawing.Size(307, 313);
-            dataGridViewEmployees.TabIndex = 0;
+            this.dataGridViewEmployees.AllowUserToAddRows = false;
+            this.dataGridViewEmployees.AllowUserToDeleteRows = false;
+            this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployees.Location = new System.Drawing.Point(6, 74);
+            this.dataGridViewEmployees.Name = "dataGridViewEmployees";
+            this.dataGridViewEmployees.ReadOnly = true;
+            this.dataGridViewEmployees.Size = new System.Drawing.Size(307, 313);
+            this.dataGridViewEmployees.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBoxPositionName);
-            this.groupBox2.Controls.Add(dataGridViewPositions);
+            this.groupBox2.Controls.Add(this.dataGridViewPositions);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.buttonClearPositionFilter);
             this.groupBox2.Controls.Add(this.buttonPositionFilter);
@@ -308,14 +326,14 @@
             // 
             // dataGridViewPositions
             // 
-            dataGridViewPositions.AllowUserToAddRows = false;
-            dataGridViewPositions.AllowUserToDeleteRows = false;
-            dataGridViewPositions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewPositions.Location = new System.Drawing.Point(6, 78);
-            dataGridViewPositions.Name = "dataGridViewPositions";
-            dataGridViewPositions.ReadOnly = true;
-            dataGridViewPositions.Size = new System.Drawing.Size(307, 309);
-            dataGridViewPositions.TabIndex = 0;
+            this.dataGridViewPositions.AllowUserToAddRows = false;
+            this.dataGridViewPositions.AllowUserToDeleteRows = false;
+            this.dataGridViewPositions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPositions.Location = new System.Drawing.Point(6, 78);
+            this.dataGridViewPositions.Name = "dataGridViewPositions";
+            this.dataGridViewPositions.ReadOnly = true;
+            this.dataGridViewPositions.Size = new System.Drawing.Size(307, 309);
+            this.dataGridViewPositions.TabIndex = 0;
             // 
             // label2
             // 
@@ -356,19 +374,28 @@
             this.buttonCalc.UseVisualStyleBackColor = true;
             this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
-            // SkillLevelsReportToolStripMenuItem
+            // администрированиеToolStripMenuItem
             // 
-            this.SkillLevelsReportToolStripMenuItem.Name = "SkillLevelsReportToolStripMenuItem";
-            this.SkillLevelsReportToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.SkillLevelsReportToolStripMenuItem.Text = "Отчет по навыкам";
-            this.SkillLevelsReportToolStripMenuItem.Click += new System.EventHandler(this.SkillLevelsReportToolStripMenuItem_Click);
+            this.администрированиеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SaveDataToFileToolStripMenuItem,
+            this.LoadDataFromFileToolStripMenuItem});
+            this.администрированиеToolStripMenuItem.Name = "администрированиеToolStripMenuItem";
+            this.администрированиеToolStripMenuItem.Size = new System.Drawing.Size(141, 20);
+            this.администрированиеToolStripMenuItem.Text = "Администрирование";
             // 
-            // PositionChangeReportToolStripMenuItem
+            // SaveDataToFileToolStripMenuItem
             // 
-            this.PositionChangeReportToolStripMenuItem.Name = "PositionChangeReportToolStripMenuItem";
-            this.PositionChangeReportToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.PositionChangeReportToolStripMenuItem.Text = "Отчет по сменам должности";
-            this.PositionChangeReportToolStripMenuItem.Click += new System.EventHandler(this.PositionChangeReportToolStripMenuItem_Click);
+            this.SaveDataToFileToolStripMenuItem.Name = "SaveDataToFileToolStripMenuItem";
+            this.SaveDataToFileToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.SaveDataToFileToolStripMenuItem.Text = "Сохранить данные в файл";
+            this.SaveDataToFileToolStripMenuItem.Click += new System.EventHandler(this.SaveDataToFileToolStripMenuItem_Click);
+            // 
+            // LoadDataFromFileToolStripMenuItem
+            // 
+            this.LoadDataFromFileToolStripMenuItem.Name = "LoadDataFromFileToolStripMenuItem";
+            this.LoadDataFromFileToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.LoadDataFromFileToolStripMenuItem.Text = "Загрузить данные из файла";
+            this.LoadDataFromFileToolStripMenuItem.Click += new System.EventHandler(this.LoadDataFromFileToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -387,10 +414,10 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(dataGridViewEmployees)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(dataGridViewPositions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPositions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,9 +433,7 @@
         private System.Windows.Forms.ToolStripMenuItem PositionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DepartmentsToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
-        private static System.Windows.Forms.DataGridView dataGridViewEmployees;
         private System.Windows.Forms.GroupBox groupBox2;
-        private static System.Windows.Forms.DataGridView dataGridViewPositions;
         private System.Windows.Forms.Button buttonCalc;
         private System.Windows.Forms.ToolStripMenuItem TrainingCoursesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem прохождениеКурсовToolStripMenuItem;
@@ -431,5 +456,10 @@
         private System.Windows.Forms.ToolStripMenuItem CoursesReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SkillLevelsReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem PositionChangeReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem администрированиеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SaveDataToFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoadDataFromFileToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridViewEmployees;
+        private System.Windows.Forms.DataGridView dataGridViewPositions;
     }
 }

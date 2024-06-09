@@ -134,5 +134,15 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void SaveDataToFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadDataFromFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
