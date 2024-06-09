@@ -34,6 +34,8 @@
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonCreateDoc = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,11 +92,22 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Дата с";
             // 
+            // buttonCreateDoc
+            // 
+            this.buttonCreateDoc.Location = new System.Drawing.Point(497, 41);
+            this.buttonCreateDoc.Name = "buttonCreateDoc";
+            this.buttonCreateDoc.Size = new System.Drawing.Size(147, 23);
+            this.buttonCreateDoc.TabIndex = 33;
+            this.buttonCreateDoc.Text = "Создать документ";
+            this.buttonCreateDoc.UseVisualStyleBackColor = true;
+            this.buttonCreateDoc.Click += new System.EventHandler(this.buttonCreateDoc_Click);
+            // 
             // FormPositionChangeReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 395);
+            this.Controls.Add(this.buttonCreateDoc);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonCreateReport);
             this.Controls.Add(this.dateTimePickerTo);
@@ -117,5 +130,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonCreateDoc;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

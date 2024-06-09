@@ -59,6 +59,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.buttonCreateReport = new System.Windows.Forms.Button();
+            this.buttonCreateDoc = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartments)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -347,11 +349,22 @@
             this.buttonCreateReport.UseVisualStyleBackColor = true;
             this.buttonCreateReport.Click += new System.EventHandler(this.buttonCreateReport_Click);
             // 
+            // buttonCreateDoc
+            // 
+            this.buttonCreateDoc.Location = new System.Drawing.Point(543, 62);
+            this.buttonCreateDoc.Name = "buttonCreateDoc";
+            this.buttonCreateDoc.Size = new System.Drawing.Size(158, 23);
+            this.buttonCreateDoc.TabIndex = 32;
+            this.buttonCreateDoc.Text = "Создать документ";
+            this.buttonCreateDoc.UseVisualStyleBackColor = true;
+            this.buttonCreateDoc.Click += new System.EventHandler(this.buttonCreateDoc_Click);
+            // 
             // FormEmployeeReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(806, 644);
+            this.Controls.Add(this.buttonCreateDoc);
             this.Controls.Add(this.buttonCreateReport);
             this.Controls.Add(this.dateTimePickerTo);
             this.Controls.Add(this.dateTimePickerFrom);
@@ -422,5 +435,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePickerTo;
         private System.Windows.Forms.Button buttonCreateReport;
+        private System.Windows.Forms.Button buttonCreateDoc;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

@@ -34,6 +34,8 @@
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.buttonCreateReport = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonCreateDoc = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,11 +92,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(413, 345);
             this.dataGridView1.TabIndex = 3;
             // 
+            // buttonCreateDoc
+            // 
+            this.buttonCreateDoc.Location = new System.Drawing.Point(499, 41);
+            this.buttonCreateDoc.Name = "buttonCreateDoc";
+            this.buttonCreateDoc.Size = new System.Drawing.Size(147, 23);
+            this.buttonCreateDoc.TabIndex = 33;
+            this.buttonCreateDoc.Text = "Создать документ";
+            this.buttonCreateDoc.UseVisualStyleBackColor = true;
+            this.buttonCreateDoc.Click += new System.EventHandler(this.buttonCreateDoc_Click);
+            // 
             // FormCertificatesReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 394);
+            this.Controls.Add(this.buttonCreateDoc);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonCreateReport);
             this.Controls.Add(this.dateTimePickerTo);
@@ -117,5 +130,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerTo;
         private System.Windows.Forms.Button buttonCreateReport;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonCreateDoc;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

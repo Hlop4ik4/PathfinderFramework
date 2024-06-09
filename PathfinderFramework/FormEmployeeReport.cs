@@ -26,5 +26,10 @@ namespace PathfinderFramework
         {
 
         }
+
+        private void buttonCreateDoc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
